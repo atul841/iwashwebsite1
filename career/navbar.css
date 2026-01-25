@@ -37,6 +37,25 @@
 
 
 
+#navbar {
+  
+  position: relative;   /* ya default */ 
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transition: none; /* delay hata diya */
+}
+
+.navbar--hide {
+  transform: translateY(-100%);
+}
+
+.navbar--show {
+  transform: translateY(0);
+}
+
+
+
 
 
 
