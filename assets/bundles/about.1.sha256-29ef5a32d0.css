@@ -1,0 +1,762 @@
+.hamper-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(hamper--woman.1.sha256-e381927ccc.webp);
+    background-position-x: 20%;
+    background-position-y: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 8.4rem 1rem 8rem;
+    text-align: center
+}
+
+@media only screen and (min-width: 480px) {
+    .hamper-banner {
+        padding-bottom: 7rem;
+        padding-top: 7.4rem
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .hamper-banner {
+        padding-top: 8rem
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .hamper-banner {
+        padding-bottom: 12.4rem;
+        padding-top: 12rem
+    }
+}
+
+.hamper-banner--new-york {
+    background-image: linear-gradient(rgba(0, 0, 0, .38), rgba(0, 0, 0, .42)), url(save-time--new-york.1.sha256-7fd7eb6e93.webp);
+    background-position-x: 76%
+}
+
+@media only screen and (max-width: 640px) {
+    .hamper-banner--new-york {
+        background-position-x: 67%
+    }
+}
+
+.hamper-banner--image-bed {
+    background-image: linear-gradient(rgba(0, 0, 0, .38), rgba(0, 0, 0, .42)), url(wash-fold-bag-clothes.1.sha256-e6d2356022.jpg)
+}
+
+@media only screen and (max-width: 960px) {
+    .hamper-banner--image-bed {
+        background-image: linear-gradient(rgba(0, 0, 0, .38), rgba(0, 0, 0, .42)), url(woman-clothes-bed.1.sha256-268ff5669e.webp)
+    }
+}
+
+.hamper-banner--dry-clean {
+    background-image: linear-gradient(rgba(0, 0, 0, .38), rgba(0, 0, 0, .42)), url(banner-dc.1.sha256-c69e7d1df0.webp)
+}
+
+.hamper-banner--hang-dry {
+    background-image: linear-gradient(rgba(0, 0, 0, .38), rgba(0, 0, 0, .42)), url(banner-hd.1.sha256-3e958e5f18.webp);
+    background-position: center
+}
+
+.hamper-banner__p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.33;
+    margin: 0 auto;
+    max-width: 12.5em
+}
+
+@media only screen and (min-width: 480px) {
+    .hamper-banner__p {
+        max-width: 15.5em
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .hamper-banner__p {
+        font-size: 26px;
+        max-width: 18em
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hamper-banner__p {
+        font-size: 28px
+    }
+
+    .hamper-banner--brand-page .hamper-banner__p {
+        max-width: 24em
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .hamper-banner__p {
+        font-size: 32px
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .hamper-banner__p {
+        font-size: 36px;
+        letter-spacing: .5px
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .hamper-banner__p {
+        font-size: 40px
+    }
+}
+
+@media only screen and (min-width: 1680px) {
+    .hamper-banner__p {
+        font-size: 44px
+    }
+}
+
+.hamper-banner__button-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 16px
+}
+
+.hamper-banner__button {
+    padding: 16px
+}
+
+.take-the-time-banner {
+    background: #001e24;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+@media only screen and (min-width: 640px) {
+    .take-the-time-banner {
+        background: linear-gradient(70deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0) 71.01%), url(wash-fold-bag-counter--desktop.1.sha256-24ee315070.webp);
+        background-blend-mode: multiply;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid var(--transparent-black-5, rgba(30, 31, 33, .05));
+        box-sizing: border-box;
+        justify-content: center;
+        padding-bottom: clamp(63px, 18.875vw + -57.8px, 214px);
+        padding-top: clamp(63px, 18.875vw + -57.8px, 214px)
+    }
+}
+
+@media only screen and (min-width: 2048px) {
+    .take-the-time-banner {
+        background-position: center center, center 60%
+    }
+}
+
+.take-the-time-banner__image {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    display: block;
+    height: auto;
+    -webkit-mask-image: linear-gradient(#001e24 46%, rgba(0, 30, 36, 0) 100%);
+    mask-image: linear-gradient(#001e24 46%, rgba(0, 30, 36, 0));
+    object-fit: cover;
+    width: 100%
+}
+
+@media only screen and (min-width: 640px) {
+    .take-the-time-banner__image {
+        display: none
+    }
+}
+
+.take-the-time-banner__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 26px 32px 32px
+}
+
+@media only screen and (min-width: 640px) {
+    .take-the-time-banner__content {
+        align-items: flex-start;
+        gap: clamp(24px, 4.1666666667vw + -2.6666666667px, 40px);
+        margin: 0 0 0 clamp(32px, 12.5vw + -48px, 80px)
+    }
+}
+
+.take-the-time-banner__title {
+    color: #fff;
+    font-family: Bebas Neue;
+    font-feature-settings: "liga" off, "clig" off;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    line-height: 100%;
+    margin: 0;
+    text-align: center;
+    text-wrap: balance
+}
+
+@media only screen and (min-width: 640px) {
+    .take-the-time-banner__title {
+        font-size: clamp(43px, 7.5520833333vw + -5.3333333333px, 72px);
+        text-align: left
+    }
+}
+
+.hero__banner--about {
+    background: linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(about__hero.1.sha256-dec178218c.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 58vh;
+    justify-content: center;
+    text-align: center
+}
+
+@media only screen and (min-width: 640px) {
+    .hero__banner--about {
+        background: linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(about__hero--desktop.1.sha256-139ce8719e.jpg) no-repeat 50% 50%;
+        background-size: cover;
+        height: 75vh
+    }
+}
+
+.h1-with-overline-wrapper--about {
+    margin: 0
+}
+
+.h2-with-overline-wrapper--about {
+    margin-bottom: 0;
+    margin-top: 20px
+}
+
+.text--overline--about-hero {
+    font-size: 16px;
+    letter-spacing: unset;
+    line-height: 40px;
+    margin: 0
+}
+
+@media only screen and (min-width: 960px) {
+    .text--overline--about-hero {
+        font-size: 18px
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .text--overline--about-hero {
+        font-size: 22px
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .text--overline--about-hero {
+        font-size: 28px
+    }
+}
+
+.text--overline--about-page {
+    color: #a09a93;
+    font-size: 14px;
+    letter-spacing: .32em;
+    line-height: 20px;
+    margin-bottom: 0
+}
+
+.text--overline+.section-title {
+    margin-top: .5rem
+}
+
+.section-title--about-hero {
+    font-size: 40px;
+    letter-spacing: -.02em;
+    line-height: 48px
+}
+
+@media only screen and (min-width: 960px) {
+    .section-title--about-hero {
+        font-size: 58px
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .section-title--about-hero {
+        font-size: 78px
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .section-title--about-hero {
+        font-size: 100px;
+        line-height: 120px
+    }
+}
+
+.section-title--about-page {
+    letter-spacing: -.01em;
+    margin-bottom: 1rem
+}
+
+.section-title--about-employees,
+.section-title--about-partners {
+    max-width: 29.5rem
+}
+
+.section-title--about-sustainability {
+    margin-bottom: 3rem;
+    text-align: center
+}
+
+@media only screen and (min-width: 1200px) {
+    .section-title--about-sustainability {
+        margin: 1rem 0 6rem
+    }
+}
+
+.text--body--about {
+    margin-bottom: .5rem;
+    max-width: 30rem
+}
+
+.image--about {
+    border-radius: 4px;
+    width: 100%
+}
+
+@media only screen and (min-width: 960px) {
+    .image--about {
+        border-radius: 8px
+    }
+}
+
+.image--flow {
+    padding: 2rem 0
+}
+
+.icon--with-bg {
+    align-items: center;
+    background-color: #ffefc7;
+    border-radius: 50%;
+    display: inline-flex;
+    font-size: 20px;
+    height: 60px;
+    justify-content: center;
+    margin-bottom: .25rem;
+    padding-top: 5px;
+    width: 60px
+}
+
+@media only screen and (min-width: 960px) {
+    .icon--with-bg {
+        font-size: 23px
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .icon--with-bg {
+        font-size: 25px;
+        height: 76px;
+        width: 76px
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .icon--with-bg {
+        font-size: 28px
+    }
+}
+
+.section--hero {
+    padding-top: 2.5rem
+}
+
+.section--employees,
+.section--partners {
+    justify-content: space-evenly;
+    margin: 60px 0
+}
+
+@media only screen and (max-width: 640px) {
+
+    .section--employees,
+    .section--partners {
+        padding: 1.25rem 1rem
+    }
+}
+
+@media only screen and (min-width: 960px) {
+
+    .section--employees,
+    .section--partners {
+        margin: 100px 0
+    }
+}
+
+.section--employees figure,
+.section--partners figure {
+    margin: .75rem 0
+}
+
+.section--sustainability {
+    background: url(about__sustainability.1.sha256-31fdfe14c0.jpg) no-repeat 80% 0%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-bottom: 120px;
+    padding-top: 140px
+}
+
+@media only screen and (min-width: 640px) {
+    .section--sustainability {
+        background: url(about__sustainability--desktop.1.sha256-48f8c58c96.jpg) no-repeat 50% 50%;
+        background-size: cover
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .section--sustainability {
+        align-items: center
+    }
+}
+
+.section--navigation {
+    justify-content: center;
+    padding-top: 60px
+}
+
+.section--history {
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0
+}
+
+.sustainability-card {
+    border-radius: 4px;
+    text-align: left
+}
+
+.sustainability-card__wrapper {
+    max-width: 18rem;
+    padding-left: 1rem
+}
+
+.sustainability-card__wrapper:first-of-type {
+    padding-left: 2rem
+}
+
+.sustainability-card__wrapper:last-of-type {
+    padding-right: 1rem
+}
+
+.sustainability-card__icon {
+    font-size: 32px
+}
+
+.sustainability-card__title {
+    font-size: 28px;
+    line-height: 32px
+}
+
+@media only screen and (min-width: 640px) {
+    .sustainability-card__title {
+        max-width: 13rem
+    }
+}
+
+.sustainability-card__grid {
+    justify-content: center;
+    row-gap: 1rem
+}
+
+.sustainability-card__grid .sustainability-card {
+    max-width: 18rem
+}
+
+.sustainability-card__grid .sustainability-card__wrapper {
+    flex-basis: 50%;
+    max-width: unset
+}
+
+@media only screen and (min-width: 1200px) {
+    .sustainability-card__grid .sustainability-card__wrapper {
+        flex-basis: 25%
+    }
+}
+
+.sustainability-card__grid .sustainability-card__wrapper:first-of-type {
+    padding-left: 1rem
+}
+
+.sustainability-card__grid .sustainability-card__wrapper:last-of-type {
+    padding-right: unset
+}
+
+.sustainability-card__grid .sustainability-card__wrapper:nth-child(odd) {
+    justify-content: flex-end
+}
+
+.content-media-block__media-block--employees,
+.content-media-block__media-block--partners {
+    min-height: 50vh
+}
+
+.content-media-block__media-block--employees img,
+.content-media-block__media-block--partners img {
+    transition: opacity .5s ease
+}
+
+@media only screen and (min-width: 768px) {
+
+    .content-media-block__media-block--partners,
+    .content-media-block__media-block--history {
+        margin-left: 0;
+        margin-right: 3rem
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .content-media-block__media-block--partners,
+    .content-media-block__media-block--history {
+        margin-left: 0;
+        margin-right: 4vw
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+
+    .content-media-block__media-block--partners,
+    .content-media-block__media-block--history {
+        margin-left: 0;
+        margin-right: 5vw
+    }
+}
+
+@media only screen and (min-width: 1680px) {
+
+    .content-media-block__media-block--partners,
+    .content-media-block__media-block--history {
+        margin-left: 0;
+        margin-right: 6vw
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+
+    .content-media-block__media-block--partners,
+    .content-media-block__media-block--history {
+        margin-left: 0;
+        margin-right: 8vw
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .content-media-block__text-block--employees {
+        margin-left: 0
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .content-media-block__text-block--employees {
+        margin-left: auto
+    }
+}
+
+@media only screen and (min-width: 640px) {
+
+    .content-media-block__text-block--employees,
+    .content-media-block__text-block--partners {
+        max-width: 28rem
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .content-media-block__text-block--employees,
+    .content-media-block__text-block--partners {
+        max-width: unset
+    }
+}
+
+.content-media-block__text-block--partners,
+.content-media-block__text-block--history {
+    margin-left: 0
+}
+
+.content-media-block__text-block--history {
+    max-width: 33rem
+}
+
+.content-media-block__text-block--history .text--body {
+    max-width: unset
+}
+
+.history__image-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-width: 20rem;
+    position: relative
+}
+
+.history__image-wrapper-mobile {
+    margin-bottom: 2.75rem;
+    padding: 0 1.75rem 0 .5rem
+}
+
+.history__image {
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .06), 0 4px 64px rgba(0, 0, 0, .2)
+}
+
+.history__image--james {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    width: 50%
+}
+
+@media only screen and (min-width: 1440px) {
+    .history__image--james {
+        bottom: 5%;
+        right: 5%;
+        width: 35%
+    }
+}
+
+@media only screen and (min-width: 1680px) {
+    .history__image--james {
+        bottom: 12%;
+        right: 12%;
+        width: 31%
+    }
+}
+
+.history__image--james-mobile {
+    bottom: -18px;
+    right: .75rem;
+    transform: rotate(8deg);
+    width: 40%
+}
+
+.history__image--founders-mobile {
+    transform: rotate(-2deg)
+}
+
+.hamper-banner--about {
+    background: linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(about__cta.1.sha256-3e3ff5ca6d.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    height: 28rem;
+    justify-content: space-evenly;
+    padding: 6.4rem 1.3rem 6rem
+}
+
+@media only screen and (min-width: 640px) {
+    .hamper-banner--about {
+        background: linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(about__cta--desktop.1.sha256-285e94ff0a.jpg) no-repeat 50% 50%;
+        background-size: cover;
+        align-items: center
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hamper-banner--about {
+        height: 35rem
+    }
+}
+
+.hamper-banner--about .hamper-banner__p {
+    font-size: 28px;
+    line-height: 120%
+}
+
+@media only screen and (min-width: 1200px) {
+    .hamper-banner--about .hamper-banner__p {
+        font-size: 48px;
+        max-width: 48rem
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .hamper-banner--about .hamper-banner__p {
+        font-size: 52px;
+        max-width: 54rem
+    }
+}
+
+.navigation-card {
+    max-width: 30rem
+}
+
+.navigation-card__link,
+.navigation-card__link:hover {
+    color: unset
+}
+
+.navigation-card__image {
+    border-radius: 8px;
+    height: 13.5rem;
+    margin: 2rem 0
+}
+
+@media only screen and (min-width: 1200px) {
+    .navigation-card__image {
+        height: 15rem
+    }
+}
+
+.navigation-card__image--questions {
+    background: url(about__questions.1.sha256-ab4ee881ca.jpg) no-repeat center center;
+    background-size: cover
+}
+
+.navigation-card__image--guarantee {
+    background: url(about__guarantee.1.sha256-df0cdd8157.jpg) no-repeat center center;
+    background-size: cover
+}
+
+.navigation-card__image--careers {
+    background: url(about__careers.1.sha256-fd38950aa6.jpg) no-repeat center center;
+    background-size: cover
+}
+
+.navigation-card__header {
+    align-items: center;
+    display: flex;
+    margin-top: .5rem
+}
+
+.navigation-card__title {
+    font-size: 28px;
+    letter-spacing: -.02em;
+    line-height: 36px;
+    margin: 0
+}
+
+.navigation-card__icon {
+    border: 2px solid #00a3ad;
+    border-radius: 50%;
+    color: #00a3ad;
+    font-size: 25px;
+    margin: 0 .75rem;
+    padding: 5px
+}
+
+.navigation-card__body {
+    margin-top: .75rem
+}

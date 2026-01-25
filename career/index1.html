@@ -1,0 +1,1291 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Careers • VandV</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="../csscarrier/style.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <style>
+            
+    :root{
+      --bg: #ffffff;
+      --muted: #6b7280;
+      --brand: #ffe52f;
+      --card: #ffffff;
+      --soft-shadow: 0 8px 30px rgba(16,24,40,0.06);
+      --glass: rgba(15,107,241,0.06);
+      --radius: 14px;
+    }
+
+    /* Reset & base */
+    html,body{height:100%;}
+    body{
+      margin:0;font-family:Inter, 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+      background:linear-gradient(180deg,#fbfdff 0%, #ffffff 100%);
+      color:#0f1724;-webkit-font-smoothing:antialiased;
+    }
+
+    /* NAV */
+    .navbar{padding:1rem 1.25rem;background:transparent}
+    .brand-logo{height:40px;width:auto}
+
+    /* HERO */
+    .hero{padding:6.5rem 0 4rem}
+    .hero .eyebrow{color:var(--brand);font-weight:700;letter-spacing:.6px}
+    .hero h1{font-size:2.4rem;line-height:1.05;margin:.35rem 0 0;font-weight:800}
+    .hero p.lead{color:var(--muted);max-width:700px;margin:1rem 0 1.5rem;font-size:1.05rem; margin-left: 288px;}
+    .cta-primary{background: linear-gradient(90deg, var(--brand), #ffe52f);border:none;padding:0.75rem 1.25rem;border-radius:999px;font-weight:700}
+    .cta-ghost{border-radius:999px;border:1px solid rgba(228, 239, 68, 0.14);background:transparent;padding:.6rem 1rem}
+
+    /* SEARCH + FILTERS */
+    .controls{margin-top:1.75rem;display:flex;gap:.5rem;flex-wrap:wrap}
+    .search{flex:1;min-width:220px}
+    .filter-btn{border-radius:999px}
+
+    /* JOB GRID */
+    .jobs-grid{margin-top:2rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+    @media (max-width:992px){.jobs-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:576px){.jobs-grid{grid-template-columns:1fr}}
+
+    .job-card{background:var(--card);border-radius:var(--radius);padding:1.35rem;box-shadow:var(--soft-shadow);border:1px solid rgba(15,23,42,0.03);display:flex;flex-direction:column;transition:transform .22s ease, box-shadow .22s ease}
+    .job-card:hover{transform:translateY(-8px);box-shadow:0 28px 60px rgba(8,15,32,0.08)}
+    .job-meta{color:var(--muted);font-size:.9rem}
+    .pill{display:inline-block;padding:.28rem .6rem;border-radius:999px;font-size:.78rem;background:rgba(15,107,241,0.08);color:var(--brand);font-weight:600}
+
+    /* SECTION TITLES */
+    .section-title{font-size:1.4rem;font-weight:700;margin-bottom:1rem}
+
+    /* LIFE AT VANDV */
+    .life-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:center}
+    @media (max-width:767px){.life-grid{grid-template-columns:1fr}}
+    .life-card{border-radius:12px;padding:1.25rem;background:linear-gradient(180deg,#fff,#fbfdff);box-shadow:var(--soft-shadow);border:1px solid rgba(2,6,23,0.03)}
+
+    /* BENEFITS */
+    .benefits{display:flex;gap:1rem;flex-wrap:wrap}
+    .benefit{flex:1;min-width:180px;background:linear-gradient(180deg,#ffffff,#fbfbff);border-radius:12px;padding:1rem;border:1px solid rgba(15,23,42,0.03);box-shadow:var(--soft-shadow)}
+
+    /* TESTIMONIAL / GALLERY */
+    .avatars{display:flex;gap:8px}
+    .avatar{height:56px;width:56px;border-radius:12px;object-fit:cover;border:2px solid #fff;box-shadow:0 6px 20px rgba(2,6,23,0.06)}
+
+    /* FOOTER */
+    footer{padding:2.4rem;background:#fbfdff;border-top:1px solid rgba(15,23,42,0.03);margin-top:3rem}
+
+    /* Small helpers */
+    .muted{color:var(--muted)}
+    .text-accent{color:var(--brand);font-weight:700}
+
+    /* subtle entrance animation */
+    .animate-up{transform:translateY(10px);opacity:0;transition:all .5s cubic-bezier(.2,.9,.2,1)}
+    .animate-up.in-view{transform:none;opacity:1}
+    .text-end .pill{ 
+      color: #0f1724;
+    }
+
+     /* Responsive font adjustments */
+  @media (max-width: 768px) {
+  .hero .container .lead {
+    font-size: 15px;        /* slightly smaller for mobile */
+    white-space: normal;    /* ✅ allows text to break into lines */
+    text-align: center;     /* centers text */
+    line-height: 1.6;       /* better spacing between lines */
+    padding: 0 15px;        /* adds side padding */
+    margin: 0 auto;         /* centers container */
+  }
+}
+
+
+  
+  
+  </style> 
+
+    
+<link rel="stylesheet"
+      href="../assets/bundles/base_rebrand.1.sha256-20c8910417.css">
+    
+    
+    
+    
+    <link rel="stylesheet" href="navbar.css">
+    </head>
+    <body>
+        <!-- NAV -->
+        <div class="navbar__wrapper ">
+
+      <nav id="navbar"
+        class="navbar uk-navbar uk-navbar-container uk-navbar-transparent  navbar--with-dynamic-schedule-cta-right"
+        uk-navbar>
+        <!-- Note: navbar--full shows only on devices wider than tablet (>1024px) -->
+        <div class="navbar--pages navbar--full uk-navbar-left ">
+          <ul class="nav uk-navbar-nav">
+
+            <!-- <li class="nav-item nav-item--logo nav-item--home">
+          <a id="nav__a--home" class="nav__link" href="index.htm" aria-label="Home">
+            <figure class="figure--logo logo--nav-left" role="none" aria-hidden="true"></figure>
+          </a>
+        </li> -->
+            <li class="nav-item nav-item--logo nav-item--home">
+              <a id="nav__a--home" class="nav__link nav-text-logo" href="../" aria-label="Home">
+
+                <img src="iwashhublogo.png" alt="iWash Hub" style="height:72px;">
+
+              </a>
+            </li>
+
+
+            <li class="nav-item nav-item--services-pricing">
+              <a id="nav__a--services-pricing" class="nav__link " href="iWash Hubservice.htm"
+                style="color: rgb(0, 0, 0);">Services and Pricing</a>
+            </li>
+
+            <li class="nav -item nav-item--rinse-repeat">
+              <a id="nav__a--rinse-repeat" class="nav__link " href="#" style="color: rgb(0, 0, 0);">Wash Repeat</a>
+            </li>
+
+            <li class="nav-item nav-item--partner">
+              <a id="nav__a--partner" class="nav__link " href="#" style="color: rgb(0, 0, 0);">For Business</a>
+            </li>
+
+            <li class="nav-item nav-item--locations">
+              <a id="nav__a--locations" class="nav__link" href="#" aria-haspopup="true"
+                style="color: rgb(0, 0, 0);">Locations <span
+                  class="rinse-icon rinse-icon--chevron-down nav__dropdown-chevron" aria-hidden="true"></span></a>
+              <div class="nav__dropdown uk-navbar-dropdown" uk-dropdown="offset: -8;mode: click;">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li class="nav__dropdown-item">
+                    <a class="nav__dropdown-link" href="#">San
+                      Francisco Bay Area</a>
+                  </li>
+
+                  <li class="nav__dropdown-item">
+                    <a class="nav__dropdown-link" href="#">New
+                      York</a>
+                  </li>
+
+                  <li class="nav__dropdown-item">
+                    <a class="nav__dropdown-link" href="#">Los
+                      Angeles</a>
+                  </li>
+
+
+
+
+
+                  <li class="nav__dropdown-item">
+                    <a class="nav__dropdown-link" href="#">Oakland</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div><!-- .navbar--pages -->
+
+        <div class="navbar--actions navbar--full uk-navbar-right ">
+          <!-- When using_fade_in_right_cta, this will fade in/out opposite the ul that follows; start this faded out -->
+          <ul class="nav uk-navbar-nav" data-nav-fade-in-on-scroll style="opacity: 0; visibility: hidden;">
+
+            <li class="nav-item nav-item--log-in">
+
+              <a data-go-to-login="header" class="nav__link nav__link--log-in" href="#" style="color: rgb(0, 0, 0);">Log
+                in</a>
+
+            </li>
+
+            <a href="https://pickup-scheduler.quickdrycleaning.com/en/iwashhub/pickup"
+              class="dynamic-schedule-cta background--light " data-dynamic-schedule-cta="nav" data-schedule-pickup-cta
+              data-segment-cta="dynamic-schedule-cta" data-segment-cta-location="nav" data-select-service
+              data-testid="nav-right-button">
+              <div class="dynamic-schedule-cta__content">
+                <div class="dynamic-schedule-cta__clickable-area" data-dynamic-schedule-cta-area="pickup">
+                  <strong class="dynamic-schedule-cta__heading">Pickup</strong>
+                  <span class="dynamic-schedule-cta__text" data-dynamic-cta-pickup>
+                    Tomorrow
+
+                  </span>
+                </div>
+                <div class="dynamic-schedule-cta__divider"></div>
+                <div class="dynamic-schedule-cta__clickable-area" data-dynamic-schedule-cta-area="where">
+                  <strong class="dynamic-schedule-cta__heading">Where</strong>
+                  <span class="dynamic-schedule-cta__text dynamic-schedule-cta__text--address" data-dynamic-cta-address>
+                    Add address
+
+                  </span>
+                </div>
+              </div>
+              <div class="dynamic-schedule-cta__icon-circle rinse-button--primary-new no-transform" aria-hidden="true"
+                data-dynamic-schedule-cta-area="arrow">
+                <span class="dynamic-schedule-cta__icon rinse-icon rinse-icon--arrow-right-long"></span>
+              </div>
+            </a>
+
+          </ul>
+
+          <!-- When using_fade_in_right_cta, this will fade out/in opposite the ul above; this starts showing. -->
+          <ul class="nav uk-navbar-nav" data-nav-fade-out-on-scroll style="position: absolute; right: 0;">
+
+            <li class="nav-item nav-item--log-in">
+
+              <a data-go-to-login="header" class="nav__link nav__link--log-in" href="#">Log in</a>
+
+            </li>
+
+          </ul>
+
+        </div><!-- .navbar--full.navbar--actions -->
+
+        <!-- Note: navbar--narrow shows only on narrow devices (<1024px width) -->
+        <div class="navbar--narrow uk-navbar-left navbar__nav-left--narrow ">
+          <ul class="nav uk-navbar-nav">
+            <li class="nav-item nav-item--menu">
+              <a id="nav__trigger--offcanvas" class="nav__link nav__link--open-offcanvas" href="#nav--mobile"
+                aria-label="Menu" uk-toggle>
+                <span class="rinse-icon--align-left"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar--narrow uk-navbar-center">
+
+          <!-- <a id="nav__a--home--logo" class="uk-navbar-item uk-logo nav__link " href="index.htm" aria-label="Home">
+        <figure class="figure--logo logo--nav-center"></figure>
+      </a> -->
+          <a id="nav__a--home--logo" class="uk-navbar-item uk-logo nav__link" href="iWash Hub.htm" aria-label="Home">
+            <img src="lg2.png" alt="iWash Hub" style="height:32px;">
+          </a>
+
+
+        </div>
+
+        <div class="navbar--narrow uk-navbar-right navbar__nav-right--narrow ">
+          <ul class="nav uk-navbar-nav">
+
+            <li>
+              <!-- NOTE: Click event listener and innerText will be set via JS to trigger modal to open -->
+              <button class="lead-capture-popup-trigger " data-lead-capture-popup-trigger
+                data-segment-cta="lead-capture-popup-trigger" data-segment-cta-location="fixed-bottom"
+                style="display: none;"></button>
+
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+
+        <!-- HERO -->
+        <header class="hero">
+            <div class="container text-center">
+
+                <h1 style="color: rgb(1, 24, 151);">Build career that build the
+                    future.</h1> <br>
+                <p class="lead" >At iWash Hub, you don’t just do a job — you create impact.
+We work in small, high-performance teams where everyone takes ownership of their work and is rewarded for results.
+Every role here is designed for growth, recognition, and financial success — because when you help iWash Hub grow, your career and income grow too.</p>
+        <br>  <br> <br>
+                <!-- Add this part of hairing  the and which here and this that  -->
+                <style> 
+            
+          
+.jobs-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;              /* cards ke beech ka gap */
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Job Card Center + Hover Effect */
+.job-card {
+  width: 380px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  border: 1px solid #e5e5e5;
+  transition: all 0.3s ease;
+}
+
+/* Hover Glow + Lift */
+.job-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: #0a7d42;
+  box-shadow: 0px 8px 22px rgba(0, 128, 64, 0.25);
+}
+
+    </style>
+                     <div class="jobs-grid mt-4" id="jobs">
+
+    <!-- JOB CARD 1 -->
+    <div class="job-wrapper">
+        <img src="gitimage.gif" class="top-gif" alt="gif">
+
+        <article class="job-card animate-up" data-dept="engineering" data-stage="mid">
+
+            <div class="d-flex justify-content-between align-items-start mb-1">
+    <!-- Left Section -->
+    <div style="flex: 1;">
+        <h5 style="margin: 0; white-space: nowrap; margin-right: 20px;">Graphic Designer Video Editor</h5>
+    </div>
+
+    <!-- Right Section -->
+    <div class="text-end" style="width: 140px;">
+        <div class="pill">Full-time</div>
+    </div>
+</div>
+
+<!-- New Line Content -->
+<div class="job-meta" style="margin-top: 5px;">
+     Maharashtra, India  ! (Remote (Work From Home) )
+</div>
+
+
+            <p class="muted mt-2" style="text-align: left;">
+                We are looking for a highly creative and experienced Graphic Designer s Video Editor who can handle both static and motion-based content. The ideal candidate should have strong design sensibilities, hands-on video editing expertise, and the ability to deliver high-quality visuals for digital platforms while working remotely. <br>
+                
+
+                
+            </p>
+
+            <div class="mt-3 d-flex gap-2 align-items-center">
+                <button class="btn btn-outline-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#jobModaltop1"
+                    data-role='{"title":"Sales Team Leader — In-Office","team":"Engineering","location":"Lucknow","type":"Full-time","desc":"We are looking for a high-performance Sales Team Leader with deep experience in tele-sales, lead conversion, and managing mixed teams (office + remote).
+                This role is ideal for someone who has worked in:"}'>View</button>
+
+                <button class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#applyModal"
+                    data-role-title="Team Leader – Sales">Apply</button>
+            </div>
+
+        </article>
+    </div>
+     
+    <!-- JOB CARD 2 -->
+    <div class="job-wrapper">
+    <img src="gitimage.gif" class="top-gif" alt="gif">
+
+    <article class="job-card animate-up" data-dept="product" data-stage="junior">
+
+        <div class="d-flex justify-content-between align-items-start mb-2">
+            <div>
+                <h5>Pre-Sales Executive</h5>
+                <div class="job-meta">B2B Sales — Remote / Office</div>
+            </div>
+            <div class="text-end">
+                <div class="pill">Full-time</div>
+            </div>
+        </div>
+
+        <p class="muted mt-2" style="text-align: left;">
+            This is an excellent opportunity for candidates aspiring to build a career as a Pre-Sales Executive.
+            Kindly review the job description below and apply only if it aligns with your expertise.
+        </p>
+
+        <p class="muted mt-2" style="text-align: left;">
+            You will be responsible for contacting inbound and outbound B2B leads, explaining Iwash’s products
+            and services, understanding client requirements, qualifying leads, and coordinating closely with
+            the Sales Manager to ensure smooth handover and successful closures.
+        </p>
+
+        <div class="mt-3 d-flex gap-2 align-items-center">
+            <button class="btn btn-outline-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#jobModal4"
+                data-role='{"title":"Pre-Sales Executive","team":"Sales","location":"Remote / Office","type":"Full-time","desc":"Contact inbound and outbound B2B leads, explain products and services, qualify leads, coordinate with Sales Manager, and meet lead conversion targets."}'>View</button>
+
+            <button class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#applyModal"
+                data-role-title="Pre-Sales Executive">Apply</button>
+        </div>
+
+    </article>
+</div>
+
+
+</div>
+
+
+                <!-- This is part of that here and the next  -->
+
+                <div class="controls justify-content-center align-items-center">
+                    <a href="#open-roles" class="btn cta-primary me-2">Explore
+                        roles</a>
+                    <a href="#life" class="btn cta-ghost">Why join V&V</a>
+                </div>
+
+                <div
+                    class="mt-4 d-flex justify-content-center gap-3 align-items-center">
+                    <div class="avatars">
+                        <img src="../image/Screenshot 2025-11-06 203949.png"
+                            class="avatar" alt="avatar">
+                        <img src="../image/Screenshot 2025-11-06 204012.png"
+                            class="avatar" alt="avatar">
+                        <img src="../image/Screenshot 2025-11-06 204032.png"
+                            class="avatar" alt="avatar">
+                    </div>
+                    <div class="muted">Join a enthusiastic team — <span
+                            class="text-accent"
+                            style="color: rgb(0, 115, 25);">100+ </span>team and
+                        counting.. </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- OPEN ROLES -->
+        <main class="container" id="open-roles">
+            <section>
+                <div
+                    class="d-flex align-items-start justify-content-between flex-column flex-md-row gap-3">
+                    <div>
+                        <h2 class="section-title" style="color: rgb(1, 24, 151);">Open
+                            roles</h2>
+                        <p class="muted">Filter by team, location or level.
+                            Click a role to view full details and apply.</p>
+                    </div>
+                    <div class="d-flex gap-2 align-items-center flex-wrap">
+                        <input id="search" class="form-control search"
+                            placeholder="Search roles, skills, keywords"
+                            aria-label="search roles">
+                        <div class="btn-group">
+                            <button class="btn btn-outline-secondary filter-btn"
+                                data-filter="all">All</button>
+                            <button class="btn btn-outline-secondary filter-btn"
+                                data-filter="engineering">Engineering</button>
+                            <button class="btn btn-outline-secondary filter-btn"
+                                data-filter="design">Design</button>
+                            <button class="btn btn-outline-secondary filter-btn"
+                                data-filter="product">Product</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jobs-grid mt-4" id="jobs">
+                    <!-- Job card -->
+                    <article class="job-card animate-up" data-dept="engineering" data-stage="mid">
+    <div class="d-flex justify-content-between align-items-start mb-2">
+        <div>
+            <h5>Marketing Executive (Work From Home + Field Visits)</h5>
+            <div class="job-meta">Field Marketing — Work From Home</div>
+        </div>
+        <div class="text-end">
+            <div class="pill">Full-time</div>
+        </div>
+    </div>
+
+    <p class="muted mt-2">
+        We are hiring a Marketing Executive to handle outbound calling, client coordination,
+        and field visits when required. This role offers work-from-home flexibility along with
+        performance-based incentives and strong growth opportunities. The position involves
+        building client relationships, scheduling store visits, and achieving monthly targets
+        across Ahmedabad and Jaipur locations.
+    </p>
+
+    <div class="mt-3 d-flex gap-2 align-items-center">
+        <button class="btn btn-outline-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#jobModal"
+            data-role='{"title":"Marketing Executive (Work From Home + Field Visits)","team":"Marketing","location":"Ahmedabad & Jaipur","type":"Full-time","desc":"Make outbound calls, explain products/services, schedule store visits, coordinate with sales team, maintain reports, build client relationships, and achieve monthly targets. Salary ₹12,000–₹15,000 + performance-based incentives."}'>View</button>
+
+        <button class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#applyModal"
+            data-role-title="Marketing Executive">Apply</button>
+    </div>
+</article>
+
+
+                   
+
+                    
+
+                </div>
+
+                <div class="text-center mt-4">
+                    <button id="loadMore1" class="btn btn-outline-secondary"
+                        style="background-color: #ffe52f; color: black;">Load
+                        more roles</button>
+                </div>
+            </section>
+
+            <!-- LIFE AT VANDV -->
+            <section id="life" class="mt-5">
+                <h3 class="section-title" style="color: rgb(1, 24, 151);">Why join
+                    iWash Hub</h3>
+                <div class="life-grid mt-3">
+                    <div class="life-card">
+                        <h5>We hire builders, not just employees.</h5>
+                        <p class="muted">We don’t just hire employees — we hire
+                            architects of innovation.</p>
+                        <div class="mt-3 d-flex gap-2">
+                            <img src="whyimage.jpeg" alt="team"
+                                class="img-fluid rounded">
+                        </div>
+                    </div>
+                    <div class="life-card">
+    <h5>We work together — at iWash Hub.</h5>
+    <p class="muted">
+        At iWash Hub, your career path isn’t fixed — it grows with your dedication and performance.
+        We believe in teamwork, hands-on learning, and creating opportunities for growth in the
+        professional laundry and garment care industry.
+    </p>
+    <div class="mt-3">
+        <ul class="muted">
+            <li>Competitive monthly salary with performance-based incentives</li>
+            <li>Fast growth opportunities in operations, customer service, and store management</li>
+            <li>Transparent rewards and recognition system</li>
+            <li>Supportive team culture with on-the-job training and mentorship</li>
+            <li>Freedom to take ownership and improve service quality</li>
+            <li>Your career at iWash Hub grows with your skills, dedication, and ambition</li>
+        </ul>
+    </div>
+</div>
+
+                </div>
+            </section>
+
+            <!-- BENEFITS -->
+            <section id="benefits" class="mt-5" style="width: 100%;">
+
+  <!-- Heading left aligned -->
+  <h3 class="section-title"
+      style="color: rgb(1, 24, 151); text-align: left;">
+      Our Culture Code
+  </h3>
+
+  <br>
+
+  <!-- Boxes container -->
+  <div class="benefits mt-3"
+       style="display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 20px;
+       margin-top: 20px;">
+
+    <!-- Card 1 -->
+    <div class="benefit"
+         style="width: 220px;
+         height: 150px;
+         border: 1px solid #ddd;
+         border-radius: 10px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <img src="../image/3.png" style="width: 80px; height: 80px;" alt="">
+      <div class="muted">Think Like an Owner</div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="benefit"
+         style="width: 220px;
+         height: 150px;
+         border: 1px solid #ddd;
+         border-radius: 10px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <img src="../image/4.png" style="width: 80px; height: 80px;" alt="">
+      <div class="muted">Quality Over Everything</div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="benefit"
+         style="width: 220px;
+         height: 150px;
+         border: 1px solid #ddd;
+         border-radius: 10px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <img src="../image/5.png" style="width: 80px; height: 80px;" alt="">
+      <div class="muted">Trust Through Transparency</div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="benefit"
+         style="width: 220px;
+         height: 150px;
+         border: 1px solid #ddd;
+         border-radius: 10px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <img src="../image/6.png" style="width: 80px; height: 80px;" alt="">
+      <div class="muted">Grow & Create Impact</div>
+    </div>
+
+  </div>
+</section>
+
+
+        </main>
+
+        <div class="modal fade" id="applyModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title">Apply to VandV</h5>
+                        <button class="btn-close"
+                            data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <form id="applyForm" class="p-3 needs-validation"
+                        novalidate>
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <label class="form-label">Role</label>
+                                <input id="applyRole" type="text"
+                                    class="form-control" readonly>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Full name</label>
+                                <input name="name" type="text"
+                                    class="form-control" required>
+                                <div class="invalid-feedback">Please enter your
+                                    full name.</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Email</label>
+                                <input name="email" type="email"
+                                    class="form-control" required>
+                                <div class="invalid-feedback">Please enter a
+                                    valid email.</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Phone
+                                    (optional)</label>
+                                <input name="phone" type="tel"
+                                    class="form-control">
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Resume (PDF)</label>
+                                <input id="resume" name="resume" type="file"
+                                    class="form-control"
+                                    accept="application/pdf" required>
+                                <div class="form-text">Max 5MB. We prefer
+                                    PDF.</div>
+                                <div class="invalid-feedback">Please upload your
+                                    resume (PDF).</div>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Short note (why
+                                    you)</label>
+                                <textarea name="note" rows="3"
+                                    class="form-control"
+                                    placeholder="A few lines about why you want this role"></textarea>
+                            </div>
+
+                        </div>
+
+                        <div class="d-flex justify-content-end gap-2 mt-3">
+                            <button type="button"
+                                class="btn btn-outline-secondary"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Submit
+                                application</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script>
+document.getElementById("applyForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const formData = new FormData();
+  formData.append("role", document.getElementById("applyRole").value);
+  formData.append("name", this.name.value);
+  formData.append("email", this.email.value);
+  formData.append("phone", this.phone.value);
+  formData.append("note", this.note.value);
+  formData.append("resume", document.getElementById("resume").files[0]);
+
+  // API CALL
+  const res = await fetch("http://localhost:5000/api/job/add", {
+    method: "POST",
+    body: formData
+  });
+
+  const data = await res.json();
+
+  if (data.success) {
+    alert("Application submitted successfully!");
+    this.reset();
+  } else {
+    alert("Something went wrong. Try again!");
+  }
+});
+</script>
+
+        <!-- JOB DETAIL MODAL -->
+        <div class="modal fade" id="jobModal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 id="jobTitle" class="modal-title"></h5>
+                        <button class="btn-close"
+                            data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="jobDesc"></p>
+                        <hr>
+                        <h6>Responsibilities</h6>
+                        <ul id="jobResp">
+                            <li>Lead and supervise a team of Sales Executives
+                                and Senior Sales Representatives.</li>
+                            <li>Conduct team meetings and training sessions on
+                                communication, objection handling, and sales
+                                closing techniques.</li>
+                            <li>Monitor team performance, track conversions, and
+                                ensure targets are met.</li>
+                            <li>Handle escalated client calls and assist in deal
+                                closures.</li>
+                            <li>Coordinate with operations and finance teams for
+                                smooth onboarding and payment processing.</li>
+                            <li>Maintain accurate sales records and prepare
+                                daily and weekly performance reports.</li>
+                            <li>Provide feedback and motivation to improve
+                                overall team performance.</li>
+                            <li>Ensure adherence to company communication
+                                standards and professionalism.</li>
+                        </ul>
+                        <h6>Qualifications</h6>
+                        <ul id="jobQual">
+                            <li>Minimum 4 years of experience in telesales,
+                                inside sales, BPO, or EdTech industry with
+                                team-handling experience.</li>
+                            <li>Strong communication skills in Hindi and
+                                English.</li>
+                            <li>Proven ability to train, guide, and manage sales
+                                teams.</li>
+                            <li>Good understanding of sales processes, CRM
+                                usage, and performance tracking.</li>
+                            <li>Strong leadership, coordination, and reporting
+                                abilities.</li>
+                            <li>Comfortable working in a fast-paced,
+                                target-driven environment.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button class="btn btn-outline-secondary"
+                            data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-primary"
+                            data-bs-target="#applyModal"
+                            data-bs-toggle="modal">Apply to this role</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- job model second here -->
+
+        <div class="modal fade" id="jobModal2" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 id="jobTitle" class="modal-title"></h5>
+                        <button class="btn-close"
+                            data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="jobDesc"></p>
+                        <hr>
+                        <h6>Responsibilities</h6>
+                        <ul id="jobResp">
+                            <li> Maintain and improve the existing VandV.ai
+                                platform built on React, Node.js, and
+                                MongoDB</li>
+                            <li> Develop and deploy scalable RESTful APIs for
+                                user data, payments, and referral systems.</li>
+                            <li>Optimize front-end SEO and performance using SSR
+                                (React.js preferred) and caching
+                                strategies.</li>
+                            <li> Manage VPS hosting, implement CI/CD pipelines,
+                                and handle Git-based deployments.</li>
+                            <li> Strengthen backend security using HTTPS, JWT
+                                authentication, bcrypt encryption, and firewall
+                                setups.</li>
+                            <li> Integrate APIs like Cashfree, Google Analytics,
+                                SendGrid/AWS SES, and Firebase
+                                Notifications.</li>
+                            <li> Manage cron jobs for payouts, user activity
+                                tracking, and data synchronization.</li>
+                            <li>Enhance video hosting and delivery workflows
+                                using AWS S3 / Bunny.net / CDN
+                                integrations.</li>
+                            <li>Automate database backups, maintain data
+                                integrity, and ensure system scalability.</li>
+                            <li> Collaborate with product and design teams to
+                                align development with business goals.</li>
+
+                        </ul>
+                        <h6>Qualifications</h6>
+                        <ul id="jobQual">
+                            <li> 3–6 years of full-stack development experience
+                                using the MERN Stack .</li>
+                            <li> Proven expertise in REST API development,
+                                integration, and version control using Git.</li>
+                            <li>Experience with Tailwind CSS, responsive design,
+                                and SEO optimization.</li>
+                            <li>Working knowledge of VPS management, Linux
+                                environments, and automated deployments</li>
+                            <li>Familiarity with payment gateway integration
+                                .</li>
+                            <li>Understanding of database security, indexing,
+                                and performance optimization.</li>
+                            <li>Optional: Knowledge of Docker, Next.js, or CI/CD
+                                tools like GitHub Actions.</li>
+                            <li>Strong analytical, debugging, and
+                                problem-solving skills.</li>
+
+                        </ul>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button class="btn btn-outline-secondary"
+                            data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-primary"
+                            data-bs-target="#applyModal"
+                            data-bs-toggle="modal">Apply to this role</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="jobModal3" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 id="jobTitle" class="modal-title"></h5>
+                        <button class="btn-close"
+                            data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="jobDesc"></p>
+                        <hr>
+                        <h6>Responsibilities</h6>
+                        <ul id="jobResp">
+                            <li>Supervise daily operations of a sales
+                                communication team (4-10 members).</li>
+                            <li>Train and guide team on scripts, closing
+                                strategies, and objection handling.</li>
+                            <li>Monitor call quality and CRM usage
+                                compliance.</li>
+                            <li>Coordinate closely with management for daily
+                                goal setting and review.</li>
+                            <li>Report KPIs, conversion ratios, and insights on
+                                a weekly basis.</li>
+                        </ul>
+                        <h6>Qualifications</h6>
+                        <ul id="jobQual">
+                            <li>Minimum Education: Graduation preferred. 12th
+                                Pass acceptable with extensive experience</li>
+                            <li>Minimum 4 years of experience in sales
+                                operations, customer relations, or inside
+                                sales.</li>
+                            <li>Proven leadership ability with experience
+                                managing and mentoring sales teams.</li>
+                            <li>Strong reporting skills and performance tracking
+                                expertise.</li>
+                            <li>Problem-solving mindset with calm escalation
+                                handling.</li>
+                            <li>Must be Lucknow-based or open to relocate.
+                                In-office presence required.</li>
+
+                        </ul>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button class="btn btn-outline-secondary"
+                            data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-primary"
+                            data-bs-target="#applyModal"
+                            data-bs-toggle="modal">Apply to this role</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="jobModal4" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 id="jobTitle" class="modal-title">Pre-Sales Executive</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p id="jobDesc">
+                    This is an excellent opportunity for candidates aspiring to build a career as a Pre-Sales Executive. Kindly review the job description below and apply only if it aligns with your expertise.
+                </p>
+                <hr>
+
+                <h6>Responsibilities</h6>
+                <ul id="jobResp">
+                    <li>Contact inbound and outbound B2B leads via calls, emails, and WhatsApp</li>
+                    <li>Explain Iwash’s products and services clearly to potential business clients</li>
+                    <li>Understand client needs, pain points, and service requirements</li>
+                    <li>Qualify leads based on interest, budget, authority, and requirement</li>
+                    <li>Identify interested vs. non-interested leads and maintain accurate records</li>
+                    <li>Transfer qualified and interested leads to the Sales Manager for final negotiation and closure</li>
+                    <li>Schedule follow-up calls and meetings when required</li>
+                    <li>Maintain and update lead status in CRM or tracking sheets</li>
+                    <li>Coordinate closely with the Sales Manager to ensure smooth handover of leads</li>
+                    <li>Meet daily/weekly lead qualification and conversion targets</li>
+                    <li>Follow company scripts, processes, and communication standards</li>
+                </ul>
+
+                <h6>Qualifications</h6>
+                <ul id="jobQual">
+                    <li>Experience in B2B sales, inside sales, pre-sales, or lead generation</li>
+                    <li>Strong communication with persuasion skill and professional attitude with strong follow-up skills</li>
+                    <li>Ability to understand and explain products/services effectively</li>
+                    <li>Good listening and requirement-gathering skills</li>
+                    <li>Basic knowledge of CRM tools or Excel (preferred)</li>
+                    <li>Target-oriented and process-driven approach</li>
+                </ul>
+
+                <h6>Preferred Qualifications</h6>
+                <ul>
+                    <li>0–3 years of experience in B2B sales, pre-sales, or tele-sales</li>
+                    <li>Experience in service-based or solution-based selling is an advantage</li>
+                    <li>Immediate joiners preferred</li>
+                </ul>
+
+                <h6>About Job</h6>
+                <ul>
+                    <li><strong>Salary:</strong> Upto 15k in hand + handsome incentives</li>
+                    <li><strong>Shift:</strong> 10 AM to 7 PM</li>
+                    <li><strong>Additional Benefits:</strong> If you complete the allotted call count early, you may log out before your checkout time</li>
+                    <li><strong>Note:</strong> Candidate must have a laptop and WiFi in good working condition</li>
+                </ul>
+
+                <p>
+                    If you think your profile suits this requirement, by submitting your information, you acknowledge that you have read the above JD well.
+                </p>
+            </div>
+
+            <div class="modal-footer border-0">
+                <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary" data-bs-target="#applyModal" data-bs-toggle="modal">Apply to this role</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+         
+        <!-- Top add the part of add here and  --> 
+          <div class="modal fade" id="jobModaltop1" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 id="jobTitle" class="modal-title">Graphic Designer & Video Editor</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p id="jobDesc">
+                    <strong>Working Mode:</strong> Remote (Work From Home) <br>
+                    <strong>Location Preference:</strong> Maharashtra, India <br>
+                    <strong>Salary:</strong> Up to 50k <br><br>
+
+                    We are looking for a highly creative and experienced Graphic Designer & Video Editor who can handle both static and motion-based content. The ideal candidate should have strong design sensibilities, hands-on video editing expertise, and the ability to deliver high-quality visuals for digital platforms while working remotely.
+                </p>
+                <hr>
+
+                <h6>Responsibilities</h6>
+                <ul id="jobResp">
+                    <h1 style="font-size: 22px;">Graphic Design Responsibilities:</h1>
+                    <li>Design engaging and visually appealing graphics for social media platforms</li>
+                    <li>Design engaging and visually appealing graphics for marketing campaigns</li>
+                    <li>Design engaging and visually appealing graphics for websites and landing pages</li>
+                    <li>Design engaging and visually appealing graphics for digital advertisements and promotional materials</li>
+                    <li>Create brand-consistent creatives including banners, posters, thumbnails, and infographics</li>
+                    <li>Collaborate with marketing and content teams to understand design requirements</li>
+                    <li>Revise and improve designs based on feedback</li>
+
+                    <br>
+                    <h1 style="font-size: 22px;">Video Editing Responsibilities:</h1>
+                    <li>Edit and produce high-quality videos for social media (reels, shorts, posts)</li>
+                    <li>Edit and produce high-quality videos for marketing and promotional campaigns</li>
+                    <li>Edit and produce high-quality videos for ads and brand videos</li>
+                    <li>Add motion graphics, transitions, effects, subtitles, and background music</li>
+                    <li>Ensure videos align with brand tone, messaging, and platform guidelines</li>
+                    <li>Optimize video formats for different digital platforms</li>
+                </ul>
+
+                <h6>Required Skills & Qualifications</h6>
+                <ul id="jobQual">
+                    <li>Minimum 5+ years of professional experience in graphic design and video editing</li>
+                    <li>Strong proficiency in design and editing tools such as:</li>
+                    <li style="margin-left: 40px;">Adobe Photoshop</li>
+                    <li style="margin-left: 40px;">Adobe Illustrator</li>
+                    <li style="margin-left: 40px;">Adobe Premiere Pro</li>
+                    <li style="margin-left: 40px;">Adobe After Effects</li>
+                    <li style="margin-left: 40px;">Other similar professional software</li>
+                    <li>Strong understanding of color theory, typography, layout, and motion design</li>
+                    <li>Ability to manage multiple projects and meet deadlines independently</li>
+                    <li>Good communication skills for remote collaboration</li>
+                </ul>
+
+                <h6>Working Conditions & Requirements</h6>
+                <ul>
+                    <li>Must have a personal working laptop capable of handling design and video editing software</li>
+                    <li>Stable high-speed WiFi connection is mandatory</li>
+                    <li>Ability to work remotely with regular coordination with the team</li>
+                </ul>
+
+                <h6>What We Offer</h6>
+                <ul>
+                    <li>Work-from-home flexibility</li>
+                    <li>Opportunity to work on diverse creative projects</li>
+                    <li>Long-term growth opportunities based on performance</li>
+                </ul>
+            </div>
+
+            <div class="modal-footer border-0">
+                <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary" data-bs-target="#applyModal" data-bs-toggle="modal">Apply to this role</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+         <!-- End  of the part of that  -->
+        <!-- FOOTER -->
+
+        <footer class="vv-footer"
+            style="background-image: url(../image/bgimage1.png);">
+            <!-- CTA -->
+            
+
+            
+
+            <div class="vv-copy" style="color: white;">© 2026 iwashhub.com
+                 All rights reserved</div>
+            <div class="muted"> <span id="year"></span></div>
+        </footer>
+        <style>
+            .vv-footer {
+    display: none;
+}   
+
+        </style> 
+ 
+       <!-- new footer start here that the point that  --> 
+        <footer class="site-footer">
+      <div class="footer-container">
+
+        <!-- Column 1 : Logo & Info -->
+        <div class="footer-col footer-brand">
+          <img src="iwashhublogo.png" alt="iWash Hub" class="footer-logo">
+          <p>
+            iWash Hub is the one stop solution for all your garment
+            laundry & dry cleaning needs.
+          </p>
+
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+
+
+
+          <h4>Help & Support</h4>
+          <p>
+            <i class="icon clock"></i>
+            Monday-Sunday 9:00 AM 10:00 PM
+          </p>
+
+          <p>
+            <i class="icon phone"></i>
+            <a href="tel:+918800414848" style="color: white;">+91 8948310077</a>
+          </p>
+
+          <p>
+            <i style="color: rgb(29, 248, 40);" class="fab fa-whatsapp"></i>
+            <a href="#" style="color: white;">+91 8948310077</a>
+          </p>
+
+          <p>
+            <i class="icon mail"></i>
+            <a href="mailto:info@iwashhub.com" style="color: white;">info@iwashhub.com</a>
+          </p>
+
+        </div>
+
+        <!-- Column 2 : Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Prepaid Plans</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Get Franchise</a></li>
+            <li><a href="#">Consultancy</a></li>
+            <li><a href="#">Our Stores</a></li>
+            <li><a href="#">Our Blog</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 : Services -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="iWash Hubservice.htm">Laundry Service</a></li>
+            <li><a href="#">Organic Dry Clean Service</a></li>
+            <li><a href="#">Dry Clean Service</a></li>
+            <li><a href="#">Shoe Cleaning Service</a></li>
+            <li><a href="#">Jacket Cleaning Service</a></li>
+            <li><a href="#">Bag Cleaning Service</a></li>
+            <li><a href="#">Sofa Cleaning Service</a></li>
+            <li><a href="#">Carpet Cleaning Service</a></li>
+            <li><a href="#">Steam Ironing Service</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 : QR Code -->
+        <div class="footer-col footer-qr">
+          <h4>Scan the QR Code</h4>
+          <p>To Download Mobile App</p>
+          <img src="qr-code.png" alt="QR Code">
+        </div>
+
+      </div>
+    </footer>
+        <!-- end footer in this part that  -->
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+    // small utilities
+    document.getElementById('year').innerText = new Date().getFullYear();
+
+    // animate elements when they come into view
+    const obs = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in-view'); });
+    }, {threshold:0.08});
+    document.querySelectorAll('.animate-up').forEach(el=>obs.observe(el));
+
+    // job modal population
+    const jobModal = document.getElementById('jobModal');
+    jobModal.addEventListener('show.bs.modal', function(event){
+      const btn = event.relatedTarget;
+      const roleStr = btn.getAttribute('data-role');
+      let role = {};
+      try{ role = JSON.parse(roleStr); }catch(e){ role = {title:btn.getAttribute('data-role-title')||'Role'} }
+      document.getElementById('jobTitle').innerText = role.title || 'Role';
+      document.getElementById('jobDesc').innerText = role.desc || '';
+    });
+
+    // apply modal: set role field
+    const applyModal = document.getElementById('applyModal');
+    applyModal.addEventListener('show.bs.modal', function(event){
+      const btn = event.relatedTarget;
+      const title = btn.getAttribute('data-role-title') || btn.getAttribute('data-role') || '';
+      document.getElementById('applyRole').value = (typeof title === 'string') ? title : (title.title || '');
+    });
+
+    // client-side filter
+    const filters = document.querySelectorAll('.filter-btn');
+    filters.forEach(f=>f.addEventListener('click', ()=>{
+      const key = f.getAttribute('data-filter');
+      filterJobs(key);
+      filters.forEach(b=>b.classList.remove('active'));
+      f.classList.add('active');
+    }));
+    function filterJobs(key){
+      document.querySelectorAll('#jobs article').forEach(a=>{
+        if(key==='all' || !key){ a.style.display = 'block'; return }
+        const dept = a.getAttribute('data-dept') || '';
+        a.style.display = dept.toLowerCase()===key.toLowerCase() ? 'block' : 'none';
+      })
+    }
+
+    // search
+    document.getElementById('search').addEventListener('input', function(e){
+      const q = e.target.value.toLowerCase();
+      document.querySelectorAll('#jobs article').forEach(a=>{
+        const text = (a.innerText || '').toLowerCase();
+        a.style.display = text.includes(q) ? 'block' : 'none';
+      })
+    });
+
+    // load more demo
+    document.getElementById('loadMore').addEventListener('click', function(){
+      const container = document.getElementById('jobs');
+      const col = document.createElement('article');
+      col.className = 'job-card animate-up';
+      col.setAttribute('data-dept','engineering');
+      col.innerHTML = `\n        <div class="d-flex justify-content-between align-items-start mb-2">\n          <div>\n            <h5>Data Engineer</h5>\n            <div class="job-meta">Python, ETL — Remote</div>\n          </div>\n          <div class="text-end">\n            <div class="pill">Full‑time</div>\n          </div>\n        </div>\n        <p class="muted mt-2">Design and maintain data pipelines, enable analytics and product features.</p>\n        <div class="mt-3 d-flex gap-2 align-items-center">\n          <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#jobModal" data-role='{"title":"Data Engineer","team":"Engineering","location":"Remote","type":"Full‑time","desc":"Design and maintain data pipelines."}'>View</button>\n          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal" data-role-title="Data Engineer">Apply</button>\n        </div>\n      `;
+      container.appendChild(col);
+      obs.observe(col);
+    });
+
+    // form validation
+    (function(){
+      'use strict'
+      const form = document.getElementById('applyForm');
+      form.addEventListener('submit', function(event){
+        event.preventDefault();
+        if(!form.checkValidity()){
+          form.classList.add('was-validated');
+          return;
+        }
+        // fake submit
+        const modal = bootstrap.Modal.getInstance(applyModal);
+        modal.hide();
+        setTimeout(()=>alert('Application submitted — we will contact shortlisted candidates.'), 250);
+      });
+    })();
+
+  </script>
+    </body>
+</html>

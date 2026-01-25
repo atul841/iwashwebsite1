@@ -1,0 +1,330 @@
+/* ===============================
+   GLOBAL CONTAINER
+================================ */
+.page_node_homepage_new {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* ===============================
+   CART ICON BADGE
+================================ */
+.cart-icon {
+  position: relative;
+}
+
+.cart-icon .approvals-count {
+  position: absolute;
+  background-color: #4a5cff;
+  font-family: RobotoBold, sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  padding: 0 5px;
+  text-align: center;
+  color: #fff;
+  top: -12px;
+  right: -8px;
+  border-radius: 2px;
+  min-width: 18px;
+}
+
+/* ===============================
+   FONTS
+================================ */
+@font-face {
+  font-family: Khand-bold;
+  src: url("../fonts/Khand/Khand-Bold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Khand-light;
+  src: url("../fonts/Khand/Khand-Light.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Khand-semibold;
+  src: url("../fonts/Khand/Khand-SemiBold.ttf");
+  font-display: swap;
+}
+
+/* ===============================
+   STATE WRAPPER
+================================ */
+.state-wrapper .state {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* ===============================
+   LEFT SIDE
+================================ */
+.state-wrapper .state .left_side {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ===============================
+   STATE SELECT
+================================ */
+.state-wrapper .state .left_side 
+.state-select div a.selectBox {
+  font-family: 'Khand-bold', sans-serif;
+  font-size: clamp(1.4rem, 2vw, 2.15rem);
+  font-weight: bold;
+  color: #4a5cff;
+  max-width: 280px;
+  height: 45px;
+  padding-right: 30px;
+  display: block;
+  outline: none;
+  border: none;
+}
+
+.state-wrapper .state .left_side 
+.state-select div a.selectBox:focus-visible {
+  outline: none;
+}
+
+.selectBox-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.selectBox-label a {
+  color: #2f3fd1;
+}
+
+/* ===============================
+   MAP SECTION
+================================ */
+.india-map {
+  background: url("../assets/images/m2.png") no-repeat center;
+  background-size: contain;
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  overflow: hidden;
+  height: 1000px;
+}
+
+/* Ripple background */
+.ripple-effect-background {
+  background: url("../assets/images/m1.png") no-repeat center;
+  background-size: contain;
+  width: 100%;
+  max-width: 750px;
+  aspect-ratio: 1 / 1;
+  height: 600px;
+}
+
+/* ===============================
+   SVG STATES
+================================ */
+.enabled {
+  fill: #4a5cff;
+  stroke: rgb(151, 130, 234);
+  cursor: pointer;
+}
+
+.enabled:hover {
+  fill: #000e8d;
+  stroke: none;
+  filter: drop-shadow(0 0 6px rgba(0,0,0,0.3));
+}
+
+.enabled.selected {
+  fill: #000e8d;
+  stroke: none;
+}
+
+.dis:hover {
+  fill: #4a5cff !important;
+  stroke: #4a5cff;
+  cursor: pointer;
+}
+
+.shade-effect {
+  fill: #4a5cff;
+  opacity: 0;
+}
+
+.makeVisible {
+  opacity: 1;
+}
+
+/* ===============================
+   FLOATING IMAGE
+================================ */
+.sl-img {
+  position: absolute;
+  bottom: 46%;
+  right: 43%;
+  max-width: 120px;
+  user-select: none;
+}
+
+/* ===============================
+   STATE SELECT POSITION (DESKTOP)
+================================ */
+.state-select {
+  margin-top: -450px;
+}
+
+/* ===============================
+   RESPONSIVE FIXES ONLY
+================================ */
+
+/* Laptop / Small Desktop */
+@media (max-width: 1200px) {
+  .state-select {
+    margin-top: -380px;
+  }
+
+  .india-map {
+    height: 850px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .state-wrapper .state {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .state-wrapper .state .left_side {
+    order: 2;
+  }
+
+  .india-map {
+    order: 1;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .state-select {
+    margin-top: 0;
+  }
+
+  .sl-img {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .state-wrapper .state {
+    gap: 20px;
+  }
+
+  .state-wrapper .state 
+  .left_side .state-select div a.selectBox {
+    max-width: 100%;
+    height: 42px;
+  }
+
+  .state-select {
+    margin-top: 0;
+  }
+
+  .sl-img {
+    position: static;
+    transform: none;
+    margin: 15px auto 0;
+    display: block;
+  }
+
+  .cart-icon .approvals-count {
+    font-size: 11px;
+    min-width: 16px;
+    top: -8px;
+    right: -6px;
+  }
+}
+
+/* Very Small Devices */
+@media (max-width: 420px) {
+  .state-select {
+    margin-top: 0;
+  }
+}
+
+
+/* ===============================
+   MOBILE MAP OVERFLOW FIX
+================================ */
+
+/* Page level overflow control */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* India map container fix */
+@media (max-width: 576px) {
+  .india-map {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-size: contain;
+    overflow: hidden;
+  }
+
+  /* SVG map inside */
+  .india-map svg {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  /* Floating image fix */
+  .sl-img {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    transform: none;
+    margin: 10px auto 0;
+    display: block;
+  }
+}
+
+/* Extra safety for very small devices */
+@media (max-width: 420px) {
+  .india-map {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* ===============================
+   MOBILE – STATE LOCATION CENTER FIX
+================================ */
+@media (max-width: 576px) {
+
+  /* SVG map ko center + left adjust */
+  .india-map svg {
+    display: block;
+    margin-left: -100px;
+    transform: translateX(-14px); /* 👈 state locator left shift */
+  }
+
+  /* State paths / clickable areas */
+  .india-map svg .enabled,
+  .india-map svg .dis,
+  .india-map svg path {
+    transform-origin: center;
+    
+  }
+}

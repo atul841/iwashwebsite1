@@ -1,0 +1,303 @@
+.html--page--privacy,
+.html--page--terms,
+.html--page--terms-of-use {
+    scroll-behavior: smooth
+}
+
+.section--agreements {
+    margin-bottom: 4rem;
+    max-width: 1200px
+}
+
+.agreements__subsection {
+    margin-top: 3rem;
+    position: relative
+}
+
+.agreements__h1,
+.agreements__h2,
+.agreements__h3 {
+    text-transform: uppercase
+}
+
+.agreements__h1 {
+    padding-top: 1rem
+}
+
+@media only screen and (min-width: 480px) {
+    .agreements__h1 {
+        font-size: 40px;
+        padding-top: 0
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .agreements__h1 {
+        font-size: 48px;
+        padding-top: 2rem
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .agreements__h1 {
+        font-size: 64px;
+        padding-top: 4rem
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .agreements__h1 {
+        font-size: 64px;
+        padding-top: 5rem
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .agreements__h1 {
+        font-size: 72px
+    }
+}
+
+.agreements__h2 {
+    font-size: 24px
+}
+
+@media only screen and (min-width: 480px) {
+    .agreements__h2 {
+        font-size: 28px
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .agreements__h2 {
+        font-size: 30px
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .agreements__h2 {
+        font-size: 36px
+    }
+}
+
+.agreements__h3 {
+    font-size: 20px
+}
+
+@media only screen and (min-width: 480px) {
+    .agreements__h3 {
+        font-size: 22px
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .agreements__h3 {
+        font-size: 24px
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .agreements__h3 {
+        font-size: 28px
+    }
+}
+
+.agreements__p {
+    margin: 2rem 0
+}
+
+.agreements__p--emphasis {
+    color: #df4661;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 3rem
+}
+
+@media only screen and (min-width: 960px) {
+    .agreements__p--emphasis {
+        margin-bottom: 4rem
+    }
+}
+
+.agreements__p--contact {
+    margin: 1rem 0
+}
+
+.agreements__table {
+    border: 1px solid #453536;
+    border-collapse: collapse;
+    margin-bottom: 4rem;
+    width: 100%
+}
+
+.agreements__table thead {
+    background-color: #f2f0ee
+}
+
+.agreements__table th,
+.agreements__table td {
+    border: 1px solid #453536;
+    font-size: .9rem;
+    padding: 14px 4px;
+    width: 33.33%
+}
+
+.agreements__table td {
+    padding: 8px 1rem;
+    vertical-align: top
+}
+
+.agreements__table td:first-child {
+    padding-top: 1rem
+}
+
+.agreements__ol--table-of-contents li {
+    margin: 6px 0
+}
+
+.agreements__p+.agreements__ul,
+.agreements__p+.agreements__ol {
+    margin-top: -1rem
+}
+
+.section__heading--do-not-sell {
+    max-width: 11em
+}
+
+@media only screen and (min-width: 960px) {
+    .section__heading--do-not-sell {
+        margin-top: 4rem
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .section__heading--do-not-sell {
+        max-width: none
+    }
+}
+
+.section__p--do-not-sell {
+    font-size: 1rem;
+    max-width: 700px
+}
+
+@media only screen and (min-width: 960px) {
+    .section__p--do-not-sell {
+        max-width: 800px
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .section__p--do-not-sell {
+        max-width: 920px
+    }
+}
+
+.do-not-sell-form {
+    border: 1px solid #776e64;
+    margin-top: 2rem;
+    max-width: 610px;
+    padding: 1.2rem 1.4rem 1.4rem
+}
+
+@media only screen and (min-width: 640px) {
+    .do-not-sell-form {
+        margin-top: 2.5rem;
+        padding: 1.4rem 1.6rem 1.6rem
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .do-not-sell-form {
+        max-width: 640px;
+        padding: 1.5rem 1.8rem
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .do-not-sell-form {
+        max-width: 690px
+    }
+}
+
+.do-not-sell-form__heading {
+    font-size: 22px;
+    margin-top: 0
+}
+
+@media only screen and (min-width: 640px) {
+    .do-not-sell-form__heading {
+        font-size: 30px
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .do-not-sell-form__heading {
+        font-size: 34px
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .do-not-sell-form__heading {
+        font-size: 36px
+    }
+}
+
+.do-not-sell-form__fieldset,
+.do-not-sell-form__button {
+    max-width: 400px
+}
+
+.do-not-sell-form__p {
+    margin-bottom: 0;
+    max-width: 530px
+}
+
+@media only screen and (min-width: 1024px) {
+    .do-not-sell-form__p {
+        max-width: 600px
+    }
+}
+
+.do-not-sell-form__p--success {
+    color: #00a3ad;
+    font-weight: 600
+}
+
+.do-not-sell-form__p--success .rinse-icon {
+    font-weight: 700;
+    margin-right: 8px;
+    position: relative;
+    top: 2px
+}
+
+@media print {
+
+    .page--privacy .navbar__wrapper,
+    .page--privacy .uk-offcanvas,
+    .page--privacy footer,
+    .page--terms .navbar__wrapper,
+    .page--terms .uk-offcanvas,
+    .page--terms footer,
+    .page--terms-of-use .navbar__wrapper,
+    .page--terms-of-use .uk-offcanvas,
+    .page--terms-of-use footer {
+        display: none
+    }
+
+    .page--privacy .agreements__table-of-contents,
+    .page--privacy .rinse-button--scroll-to-top,
+    .page--terms .agreements__table-of-contents,
+    .page--terms .rinse-button--scroll-to-top,
+    .page--terms-of-use .agreements__table-of-contents,
+    .page--terms-of-use .rinse-button--scroll-to-top {
+        display: none
+    }
+
+    .page--privacy a,
+    .page--terms a,
+    .page--terms-of-use a {
+        color: #000;
+        text-decoration: none
+    }
+}

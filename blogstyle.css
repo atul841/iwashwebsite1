@@ -1,0 +1,174 @@
+/* footer code yaha se suru hai  */
+
+.site-footer {
+  background: #e2f6ff;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+  color: #090909;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.social-icons {
+  margin: 15px 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+}
+
+.footer-col ul li a:hover {
+  color: #000;
+}
+
+.footer-qr img {
+  width: 160px;
+  margin-top: 15px;
+}
+
+/* =========================
+   Mobile Responsive
+========================= */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-icons a {
+    margin: 0 8px;
+  }
+
+  .footer-qr img {
+    margin: 15px auto 0;
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  margin-right: 8px;
+  font-style: normal;
+  color: #000;
+}
+
+.icon.clock::before {
+  content: "🕒";
+}
+
+.icon.phone::before {
+  content: "📞";
+  color: black;
+}
+
+.icon.whatsapp::before {
+  content: "💬";
+}
+
+.icon.mail::before {
+  content: "✉️";
+}
+
+.social-icons a {
+  color: #000;
+  font-size: 18px;
+  margin-right: 12px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ff7a00; /* brand hover color (optional) */
+}
+
+/* footer yaha pe end hai  */
+
+
+
+/* cta button keyy add  */
+/* Floating CTA base */
+.floating-cta {
+  position: fixed;
+  bottom: 320px; /* neeche se thoda upar */
+  z-index: 9999;
+}
+
+/* Left CTA */
+.floating-cta-left {
+  left: 20px;
+}
+
+/* Right CTA */
+.floating-cta-right {
+  right: 20px;
+}
+
+/* Button common style */
+.cta-btn {
+  display: inline-block;
+  padding: 14px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+/* Franchise CTA */
+.cta-franchise {
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+}
+
+/* Pickup CTA */
+.cta-pickup {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+}
+
+/* Hover effect */
+.cta-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}

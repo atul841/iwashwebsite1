@@ -1,0 +1,2 @@
+import{_ as o}from"./setPrototypeOf.1.sha256-862ec942ec.js";try{let e=typeof window<"u"?window:typeof global<"u"?global:typeof globalThis<"u"?globalThis:typeof self<"u"?self:{},t=new e.Error().stack;t&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[t]="0a4e753a-7071-4bde-a15c-28c2d5412902",e._sentryDebugIdIdentifier="sentry-dbid-0a4e753a-7071-4bde-a15c-28c2d5412902")}catch{}function d(e,t){e.prototype=Object.create(t.prototype),e.prototype.constructor=e,o(e,t)}export{d as _};
+//# sourceMappingURL=inheritsLoose.1.sha256-9d1d51b64e.js.map

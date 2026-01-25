@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #062f69;
+      }
+    </style>
+  </defs>
+  <g id="Group_14039" data-name="Group 14039" transform="translate(279 -2638) rotate(90)">
+    <g id="close-circle-line" transform="translate(2638 215)">
+      <path id="Path" class="cls-1" d="M0,0H64V64H0Z"/>
+      <path id="Shape" class="cls-2" d="M30,60A30,30,0,1,1,60,30,30.034,30.034,0,0,1,30,60ZM30,6A24,24,0,1,0,54,30,24.028,24.028,0,0,0,30,6ZM21.514,42.733l0,0-4.24-4.247L25.758,30l-8.486-8.483,4.244-4.244L30,25.758l8.483-8.486,4.247,4.244L34.242,30l8.489,8.483-4.245,4.245L30,34.242l-8.483,8.489Z" transform="translate(2 2)"/>
+    </g>
+  </g>
+</svg>

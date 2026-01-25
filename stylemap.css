@@ -1,0 +1,158 @@
+/* Laptop + Desktop + Mobile (sab par hide) */
+#block-homepageschemeblock,
+.autocomplete-search.govt-scheme {
+  display: none !important;
+}
+
+
+/* Explore section – completely disable */
+.explore-wrapper,
+.explore {
+  display: none !important;
+}
+
+
+@media (max-width: 768px) {
+  .india-map {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
+
+
+
+
+.state-info-card {
+  margin-top: 12px;
+  padding: 12px 14px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  max-width: 300px;
+}
+
+.state-info-card strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.state-info-card p {
+  margin: 0;
+  font-size: 13px;
+  color: #ff6b00;
+}
+
+
+/* Dynamic State Content Text */
+
+/* ===============================
+   State Office Info UI
+================================ */
+
+#stateDescription {
+  white-space: pre-line;          /* \n ko new line me dikhane ke liye */
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #2c2c2c;
+
+  background: #ffffff;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border-left: 4px solid #4a5cff;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease; 
+}
+
+/* First line – Company Name */
+#stateDescription::first-line {
+  font-weight: 600;
+  font-size: 15px;
+  color: #111;
+}
+
+/* Hover effect */
+#stateDescription:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ===============================
+   Mobile Responsive
+================================ */
+
+@media (max-width: 767px) {
+  #stateDescription {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  #stateDescription::first-line {
+    font-size: 14px;
+  }
+}
+
+
+/* ===============================
+   State Address Card UI
+================================ */
+
+.headfromarey {
+  margin-top: 12px;
+}
+
+.headfromarey .contener {
+  background: #ffffff;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border-left: 4px solid #4a5cff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* Text formatting */
+#stateDescription {
+  margin: 0;
+  white-space: pre-line; /* line breaks enable */
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #2c2c2c;
+}
+
+/* First line – Company name */
+#stateDescription::first-line {
+  font-weight: 600;
+  font-size: 15px;
+  color: #111;
+}
+
+/* Hover effect */
+.headfromarey .contener:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ===============================
+   Mobile Responsive
+================================ */
+
+@media (max-width: 767px) {
+  .headfromarey .contener {
+    padding: 12px;
+  }
+
+  #stateDescription {
+    font-size: 13px;
+  }
+
+  #stateDescription::first-line {
+    font-size: 14px;
+  }
+}
+

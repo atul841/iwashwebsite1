@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="334" height="342" viewBox="0 0 334 342">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 8px;
+      }
+
+      .cls-2 {
+        opacity: 0.4;
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1409" data-name="Rectangle 1409" class="cls-1" width="334" height="342"/>
+    </clipPath>
+  </defs>
+  <g id="bg_drop" class="cls-2">
+    <path id="Path_4634" data-name="Path 4634" class="cls-3" d="M243.638,307.831,319.126,19.1A14.846,14.846,0,0,0,297.881,2.22L8.481,152.862a14.8,14.8,0,0,0-1.189,25.584l213.9,138.087A14.873,14.873,0,0,0,243.638,307.831Z" transform="translate(6.925 6.91)"/>
+    <path id="Path_4635" data-name="Path 4635" class="cls-3" d="M66.944,61.041,7.516,105.508V16.573" transform="translate(104.148 229.081)"/>
+    <line id="Line_115" data-name="Line 115" class="cls-3" y1="161.936" x2="146.549" transform="translate(113.692 82.609)"/>
+  </g>
+</svg>

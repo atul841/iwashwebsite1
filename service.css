@@ -1,0 +1,1127 @@
+/* frist part here that  */ 
+.hero-laundry {
+  background: linear-gradient(180deg, #eaf4ff, #ffffff);
+  padding: 30px 20px;
+  overflow: hidden;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* LEFT */
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  color: #0b0b0b;
+}
+.hero-content h1 {
+  white-space: nowrap;        /* 👈 ek hi line */
+}
+
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.service-tags a {
+  background: #0a2f57;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 40px;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.service-tags a span {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.service-tags a:hover {
+  background: #ff7a00;
+}
+
+/* RIGHT */
+.hero-image {
+  flex: 1;
+  text-align: right;
+}
+
+.hero-image img {
+  max-width: 420px;
+  width: 100%;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .service-tags {
+    gap: 12px;
+  }
+
+  .service-tags a {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-width: 320px;
+  }
+}
+/* end here that  */ 
+
+/* second part start here that  */
+
+
+.services-section {
+  position: relative;
+  padding: 40px 16px;   /* 👈 left-right kam */
+  border-radius: 100px 20px 100px 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  overflow: hidden;
+  background: transparent;
+}
+
+
+/* 🔹 Background Image Layer (single image) */
+.services-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('laundry-girl.webp') center / cover no-repeat;
+  filter: blur(5px);              /* 👈 blur control */
+  transform: scale(1.1);           /* edges safe */
+  z-index: 0;
+}
+
+/* 🔹 Content upar rahe */
+.services-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.services-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* CARD */
+.service-card {
+  background: #cce5eb;
+  padding: 40px 32px;
+  border-radius: 100px 20px 100px 20px; /* same curved style */
+  border: 3px solid #0a2f57;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.15),
+    0 0 0 rgba(10, 47, 87, 0); /* glow off */
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
+} 
+
+/* Hover pe glow */
+.service-card:hover {
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.15),
+    0 0 18px rgba(10, 47, 87, 0.45); /* 👈 soft glow */
+}
+
+.service-icon {
+  display: flex;
+  justify-content: center;   /* 👈 horizontal center */
+  align-items: center;       /* 👈 vertical center */
+  margin-bottom: 10px;
+}
+
+.service-icon img {
+  max-width: 80px;           /* icon size control */
+  height: auto;
+}
+
+
+.service-card h3 {
+  font-size: 22px;
+  margin-bottom: 1px;
+  color: #0a2f57;
+}
+
+.service-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+.read-more {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 12px 36px;
+  border-radius: 40px;
+  border: 1.5px solid #000;
+  text-decoration: none;
+  font-size: 15px;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.read-more:hover {
+  background: #0a2f57;
+  color: #fff;
+  border-color: #0a2f57;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .service-card {
+    padding: 32px 26px;
+  }
+
+  .service-card h3 {
+    font-size: 20px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+  }
+}
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px); /* 👈 thoda upar */
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25); /* 👈 strong shadow */
+}
+
+
+
+
+/* Second part end here that  */ 
+
+/* thisd part css start here  */
+.why-choose-section {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.why-choose-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* LEFT IMAGE */
+.why-image-wrap img {
+  width: 100%;
+  border-radius: 120px 0 120px 0;
+  object-fit: cover;
+}
+
+/* RIGHT CONTENT */
+.why-label {
+  color: #7bdc28;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.why-content h2 {
+  font-size: 34px;
+  line-height: 1.25;
+  margin-bottom: 20px;
+  color: #0a1f44;
+}
+
+.why-desc {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* FEATURES */
+.why-features {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.why-item {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.why-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #e8ffcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.why-icon img {
+  width: 30px;
+}
+
+.why-item h4 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  color: #0a1f44;
+}
+
+.why-item p {
+  margin: 0;
+  font-size: 15px;
+  color: #555;
+}
+
+/* BUTTON */
+.why-btn {
+  display: inline-block;
+  background: #7bdc28;
+  color: #000;
+  padding: 14px 40px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.why-btn:hover {
+  background: #6bc320;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .why-choose-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .why-image-wrap img {
+    border-radius: 30px;
+  }
+
+  .why-content h2 {
+    font-size: 26px;
+  }
+}
+
+/* third part end here  */
+
+
+/* Footer se pehle jo last section hai uska bottom gap remove */
+section:last-of-type {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* ONLY mobile view */
+@media (max-width: 640px) {
+  section:last-of-type {
+    margin-bottom: 10px !important;   /* pehle 0 tha */
+    padding-bottom: 10px !important;  /* pehle 0 tha */
+  }
+}
+
+
+/* ONLY mobile view fix */
+@media (max-width: 640px) {
+  .section--landing-bold--guarantee {
+    margin-top: -80px; /* value adjust kar sakte ho */
+  }
+}
+
+
+/* FAQ Section ka code yaha se start hota hai ok */ 
+.faq-section {
+  max-width: 900px;
+  margin: auto;
+  margin-top: 35px;
+ 
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #111827;
+}
+
+/* Card */
+.faq-item {
+  background: #ffffff;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  border: 1px solid #eef2f7;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.35s ease, transform 0.35s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.08);
+}
+
+/* Question */
+.faq-question {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 22px 26px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Icon */
+.faq-icon {
+  width: 34px;
+  height: 34px;
+  background: #f3f4f6;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.45s ease, background 0.35s ease, color 0.35s ease;
+}
+
+/* Answer (SMOOTH MAGIC) */
+.faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.45s ease;
+}
+
+.faq-answer > div {
+  overflow: hidden;
+}
+
+/* Active */
+.faq-item.active .faq-answer {
+  grid-template-rows: 1fr;
+}
+
+.faq-answer > div {
+  padding: 0 26px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4b5563;
+  transition: padding 0.35s ease;
+}
+
+.faq-item.active .faq-answer > div {
+  padding: 10px 26px 26px;
+}
+
+/* Active Icon */
+.faq-item.active .faq-icon {
+  background: #6366f1;
+  color: #ffffff;
+  transform: rotate(45deg);
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .faq-title {
+    font-size: 28px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+    padding: 18px 20px;
+  }
+}
+
+
+/* footer code yaha se suru hai  */
+
+.site-footer {
+  background: #e2f6ff;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+  color: #090909;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.social-icons {
+  margin: 15px 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+}
+
+.footer-col ul li a:hover {
+  color: #000;
+}
+
+.footer-qr img {
+  width: 160px;
+  margin-top: 15px;
+}
+
+/* =========================
+   Mobile Responsive
+========================= */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-icons a {
+    margin: 0 8px;
+  }
+
+  .footer-qr img {
+    margin: 15px auto 0;
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  margin-right: 8px;
+  font-style: normal;
+  color: #000;
+}
+
+.icon.clock::before {
+  content: "🕒";
+}
+
+.icon.phone::before {
+  content: "📞";
+}
+
+.icon.whatsapp::before {
+  content: "💬";
+}
+
+.icon.mail::before {
+  content: "✉️";
+}
+
+.social-icons a {
+  color: #000;
+  font-size: 18px;
+  margin-right: 12px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ff7a00; /* brand hover color (optional) */
+}
+
+/* footer yaha pe end hai  */
+
+
+/* whassapp and chat ka code yaha se start hai so please aap yaha se karo  */
+/* Wrapper */
+.floating-chat-wrap {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* Desktop default */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 9999;
+}
+
+/* Common style */
+.floating-chat-wrap a {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+/* Chat Icon */
+.chat-float {
+  background: #ffffff;
+  border: 2px solid #ddd;
+}
+
+.chat-float i {
+  font-size: 28px;
+  color: #f1c14f; /* Yellow chat icon */
+}
+
+/* WhatsApp Icon */
+.whatsapp-float {
+  background: #25D366;
+}
+
+.whatsapp-float i {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+/* Hover effect */
+.floating-chat-wrap a:hover {
+  transform: scale(1.08);
+  transition: 0.3s ease;
+}
+
+/* 📱 Mobile View */
+@media (max-width: 768px) {
+  .floating-chat-wrap {
+    left: 20px;
+    right: auto;
+  }
+
+  .floating-chat-wrap a {
+    width: 55px;
+    height: 55px;
+  }
+
+  .chat-float i {
+    font-size: 26px;
+  }
+
+  .whatsapp-float i {
+    font-size: 30px;
+  }
+}
+
+
+/* whatSapp ka code yaha pe end hai show please aap yaha pe band karo  */
+
+.chat-popup {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 320px;
+  height: 420px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  display: none;
+  flex-direction: column;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+/* Header */
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.chat-header h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.menu, .close-chat {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Subtitle */
+.chat-subtitle {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Body */
+.chat-body {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  background: #f9f9f9;
+}
+
+.bot-msg,
+.user-msg {
+  max-width: 80%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.bot-msg {
+  background: #e6e6e6;
+}
+
+.user-msg {
+  background: #2b7cff;
+  color: #fff;
+  margin-left: auto;
+}
+
+/* Footer */
+.chat-footer {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.chat-footer input {
+  flex: 1;
+  border: none;
+  padding: 12px;
+  outline: none;
+}
+
+.chat-footer button {
+  background: #2b7cff;
+  color: #fff;
+  border: none;
+  padding: 0 18px;
+  cursor: pointer;
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .chat-popup {
+    left: 20px;
+    right: auto;
+    width: 300px;
+  }
+}
+
+
+/* UIkit slider smooth motion */
+/* ===============================
+   UIKIT SLIDER – ULTRA SMOOTH
+================================ */
+.uk-slider-items{
+  transition-timing-function: cubic-bezier(.22,1,.36,1) !important;
+}
+
+.why-rinse-gallery__image-slider{
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.why-rinse-gallery__image,
+.why-rinse-gallery__text-block li{
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(.22,1,.36,1);
+}
+
+/* FORCE ULTRA SMOOTH SLIDE */
+.uk-slider-items{
+  will-change: transform;
+  transition-property: transform !important;
+}
+
+/* Smooth manual scroll container */
+.why-rinse-gallery__image-slide-container{
+  overflow:hidden;
+}
+
+.uk-slider-items{
+  display:flex;
+  will-change: transform;
+}
+
+/* ===============================
+   TEXT SMOOTH TRANSITION
+================================ */
+.why-rinse-gallery__text-block li{
+  opacity:0;
+  transform:translateY(12px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s cubic-bezier(.22,1,.36,1);
+}
+
+.why-rinse-gallery__text-block li.gallery-text-show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* location add wala css code yaha pe hai  */ 
+.cities-section {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.cities-title {
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  color: #2b2b2b;
+}
+
+.cities-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
+
+.cities-col {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cities-col li {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 14px;
+  white-space: nowrap;
+}
+
+.city-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background: #00a2ff;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath d='M168 0C75.1 0 0 75.1 0 168c0 87.1 134.5 303.1 154.7 334.1a24 24 0 0 0 38.6 0C213.5 471.1 348 255.1 348 168 348 75.1 292.9 0 200 0zm0 240a72 72 0 1 1 0-144 72 72 0 0 1 0 144z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .cities-grid {
+    grid-template-columns: repeat(3, 1fr);
+     padding-left: 35px;   /* 👈 right move */
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .cities-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .cities-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .cities-col li {
+    font-size: 14px;
+  }
+}
+
+/* yaha pe end hota hai  */
+
+.faq-wrapper {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.faq-container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+/* Tabs */
+.faq-tabs {
+  width: 260px;
+}
+
+.tab {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  background: #f5f5f5;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.tab.active {
+  background: #f36c21;
+  color: #fff;
+}
+
+.tab::after {
+  content: "›";
+  position: absolute;
+  right: 20px;
+}
+
+/* Content */
+.faq-content {
+  flex: 1;
+}
+
+.faq-group {
+  display: none;
+}
+
+.faq-group.active {
+  display: block;
+}
+
+/* Accordion */
+.faq-item {
+  border-bottom: 1px solid #eee;
+}
+
+.faq-question {
+  padding: 18px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 22px;
+}
+
+.faq-item.open .faq-question::after {
+  content: "–";
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 18px 18px;
+  color: #555;
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+.faq-title {
+  display: block;          /* ensure visible */
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;             /* dark color */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+@media (max-width: 768px) {
+
+  .faq-container {
+    flex-direction: column;
+  }
+
+  /* Tabs on top */
+  .faq-tabs {
+    width: 100%;
+  }
+
+  .tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .tab::after {
+    content: "›";
+    font-size: 20px;
+  }
+
+  /* FAQ content */
+  .faq-content {
+    width: 100%;
+  }
+
+  .faq-group {
+    margin-top: 10px;
+  }
+
+  /* Question active look (purple bar) */
+  .faq-item.open .faq-question {
+    background: #4b2e83;
+    color: #fff;
+  }
+
+  .faq-question {
+    background: #f5f5f5;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+
+  .faq-question::after {
+    color: inherit;
+  }
+
+  .faq-answer {
+    background: #fff;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+/* ===== Loader Overlay ===== */
+.service-loader {
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+/* Ball */
+.loader-ball {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 6px solid #0a2f57;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+/* Rotate animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===== Hide cards initially ===== */
+.services-grid {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* ===== Show cards ===== */
+.services-grid.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ===== Remove loader ===== */
+.service-loader.hide {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}

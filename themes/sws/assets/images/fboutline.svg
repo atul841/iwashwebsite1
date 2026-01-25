@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="facebook" transform="translate(-1917 -1758)">
+    <rect id="Rectangle_1416" data-name="Rectangle 1416" class="cls-1" width="64" height="64" transform="translate(1917 1758)"/>
+    <path id="Shape" class="cls-2" d="M27,54A27,27,0,1,1,54,27,27.031,27.031,0,0,1,27,54Zm2.7-21.6V48.433A21.6,21.6,0,0,0,27,5.4h-.014A21.6,21.6,0,0,0,24.3,48.433V32.4H18.9V27h5.4V22.534c0-3.554.363-4.889,1.079-6.238a7.355,7.355,0,0,1,3.069-3.067A10.891,10.891,0,0,1,33,12.2c.2-.012.406-.018.625-.018a20.5,20.5,0,0,1,2.825.235v5.13H35.1c-2.453,0-3.49.112-4.109.442a1.965,1.965,0,0,0-.848.848c-.332.626-.442,1.248-.442,3.694V27H36.45L35.1,32.4Z" transform="translate(1922 1763)"/>
+  </g>
+</svg>

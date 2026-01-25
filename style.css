@@ -1,0 +1,789 @@
+/* ===============================
+   TESTIMONIAL WRAPPER
+================================ */
+.testimonial-wrap{
+  max-width:1200px;
+  margin: auto;
+  text-align:center;
+  padding:0 20px;
+}
+
+.testimonial-title{
+  font-size:50px;
+  font-weight:600;
+  margin-bottom:70px;
+}
+
+/* ===============================
+   SLIDER
+================================ */
+.testimonial-slider{
+  position:relative;
+  overflow:hidden;
+  padding-bottom:120px;   /* ✅ MAIN FIX: bottom space */
+}
+
+/* track */
+.slider-track{
+  display:flex;
+  gap:40px;
+  align-items:center;     /* ✅ prevent vertical shift */
+  transform:translate3d(0,0,0);
+  will-change:transform;
+}
+
+/* ===============================
+   CARD BASE
+================================ */
+.testimonial-card{
+  position:relative;
+  min-width:520px;
+  padding:70px 40px 60px; /* ✅ bottom padding increased */
+  border-radius:46px;
+  background:#d1d5f8;
+
+  opacity:.35;
+  filter:blur(2px);
+  transform:scale(.88);
+
+  transition:
+    transform 0.5s cubic-bezier(.22,1,.36,1),
+    box-shadow 0.5s ease,
+    opacity 0.5s ease,
+    filter 0.5s ease;
+
+  pointer-events:none;
+}
+
+/* ===============================
+   ACTIVE (CENTER) CARD
+================================ */
+.testimonial-card.active{
+  opacity:1;
+  filter:none;
+  transform:scale(1.06);
+  background:#d1d5f8;
+
+  box-shadow:0 25px 60px rgba(0,0,0,.12);
+  z-index:5;
+  pointer-events:auto;
+}
+
+/* hover effect on active */
+.testimonial-card.active:hover{
+  transform:scale(1.08) translateY(-8px); /* ✅ safer scale */
+  box-shadow:0 40px 90px rgba(0,0,0,.18);
+}
+
+/* ===============================
+   DOUBLE QUOTE
+================================ */
+.testimonial-card::before{
+  content:"“”";
+  position:absolute;
+  top:26px;
+  left:50%;
+  transform:translateX(-50%);
+
+  font-size:60px;
+  font-weight:700;
+  letter-spacing:-10px;
+  color:#000;
+  opacity:0.7;
+
+  pointer-events:none;
+}
+
+/* ===============================
+   TEXT
+================================ */
+.testimonial-card p{
+  font-size:20px;
+  line-height:1.6;
+  font-weight:500;
+  color:#333;
+}
+
+/* ===============================
+   USER
+================================ */
+.user{
+  margin-top:35px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  font-size:15px;
+  color:#222;
+  text-align:center;
+}
+
+.avatar{
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  background:#ddd;
+}
+
+.avatar.dark{
+  background:#333;
+}
+
+/* ===============================
+   NAV BUTTONS
+================================ */
+.nav-btn{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  background:#ffa500;
+  border:none;
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  color:#fff;
+  font-size:22px;
+  cursor:pointer;
+  z-index:10;
+
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.nav-btn:hover{
+  transform:translateY(-50%) scale(1.1);
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.nav-btn.left{ left:0; }
+.nav-btn.right{ right:0; }
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media(max-width:768px){
+  .testimonial-title{
+    font-size:28px;
+  }
+
+  .testimonial-card{
+    min-width:370px;
+    padding:60px 30px 45px;
+  }
+
+  .testimonial-card p{
+    font-size:18px;
+  }
+}
+
+
+
+
+/* footer gap kam karana hai  */
+
+#react-video-container{
+  display:none !important;
+}
+
+
+
+/* ===== NAVBAR DEFAULT (TOP) ===== */
+#navbar {
+  transition: background-color 0.3s ease;
+}
+
+/* navbar text white by default */
+#navbar .nav__link,
+#navbar .nav-text-logo,
+#navbar .dynamic-schedule-cta__heading,
+#navbar .dynamic-schedule-cta__text {
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+
+/* ===== SCROLL STATE ===== */
+#navbar.navbar--scrolled {
+  background-color: #ffffff; /* optional white bg on scroll */
+}
+
+/* text turns black on scroll */
+#navbar.navbar--scrolled .nav__link,
+#navbar.navbar--scrolled .nav-text-logo,
+#navbar.navbar--scrolled .dynamic-schedule-cta__heading,
+#navbar.navbar--scrolled .dynamic-schedule-cta__text {
+  color: #000000 !important;
+}
+
+
+/* Footer se pehle jo last section hai uska bottom gap remove */
+section:last-of-type {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* ONLY mobile view */
+@media (max-width: 640px) {
+  section:last-of-type {
+    margin-bottom: 10px !important;   /* pehle 0 tha */
+    padding-bottom: 10px !important;  /* pehle 0 tha */
+  }
+}
+
+
+/* ONLY mobile view fix */
+@media (max-width: 640px) {
+  .section--landing-bold--guarantee {
+    margin-top: -80px; /* value adjust kar sakte ho */
+  }
+}
+
+
+/* FAQ Section ka code yaha se start hota hai ok */ 
+.faq-section {
+  max-width: 900px;
+  margin: auto;
+ 
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #111827;
+}
+
+/* Card */
+.faq-item {
+  background: #ffffff;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  border: 1px solid #eef2f7;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.35s ease, transform 0.35s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.08);
+}
+
+/* Question */
+.faq-question {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 22px 26px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Icon */
+.faq-icon {
+  width: 34px;
+  height: 34px;
+  background: #f3f4f6;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.45s ease, background 0.35s ease, color 0.35s ease;
+}
+
+/* Answer (SMOOTH MAGIC) */
+.faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.45s ease;
+}
+
+.faq-answer > div {
+  overflow: hidden;
+}
+
+/* Active */
+.faq-item.active .faq-answer {
+  grid-template-rows: 1fr;
+}
+
+.faq-answer > div {
+  padding: 0 26px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4b5563;
+  transition: padding 0.35s ease;
+}
+
+.faq-item.active .faq-answer > div {
+  padding: 10px 26px 26px;
+}
+
+/* Active Icon */
+.faq-item.active .faq-icon {
+  background: #6366f1;
+  color: #ffffff;
+  transform: rotate(45deg);
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .faq-title {
+    font-size: 28px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+    padding: 18px 20px;
+  }
+}
+
+
+/* footer code yaha se suru hai  */
+
+.site-footer {
+  background:  
+    radial-gradient(
+      circle at center,
+      #8f9bff 0%,
+      #6f7dff 30%,
+      #4a5cff 55%,
+      #2f3fd1 75%,
+      #1f2aa8 100%
+    );
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.social-icons {
+  margin: 15px 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-qr img {
+  width: 160px;
+  margin-top: 15px;
+}
+
+/* =========================
+   Mobile Responsive
+========================= */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-icons a {
+    margin: 0 8px;
+  }
+
+  .footer-qr img {
+    margin: 15px auto 0;
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  margin-right: 8px;
+  font-style: normal;
+  color: #000;
+}
+
+.icon.clock::before {
+  content: "🕒";
+}
+
+.icon.phone::before {
+  content: "📞";
+  color: black;
+}
+
+.icon.whatsapp::before {
+  content: "💬";
+}
+
+.icon.mail::before {
+  content: "✉️";
+}
+
+.social-icons a {
+  color: #000;
+  font-size: 18px;
+  margin-right: 12px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ff7a00; /* brand hover color (optional) */
+}
+
+/* footer yaha pe end hai  */
+
+
+/* whassapp and chat ka code yaha se start hai so please aap yaha se karo  */
+/* Wrapper */
+.floating-chat-wrap {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* Desktop default */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 9999;
+}
+
+/* Common style */
+.floating-chat-wrap a {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+/* Chat Icon */
+.chat-float {
+  background: #ffffff;
+  border: 2px solid #ddd;
+}
+
+.chat-float i {
+  font-size: 28px;
+  color: #f1c14f; /* Yellow chat icon */
+}
+
+/* WhatsApp Icon */
+.whatsapp-float {
+  background: #25D366;
+}
+
+.whatsapp-float i {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+/* Hover effect */
+.floating-chat-wrap a:hover {
+  transform: scale(1.08);
+  transition: 0.3s ease;
+}
+
+/* 📱 Mobile View */
+@media (max-width: 768px) {
+  .floating-chat-wrap {
+    left: 20px;
+    right: auto;
+  }
+
+  .floating-chat-wrap a {
+    width: 55px;
+    height: 55px;
+  }
+
+  .chat-float i {
+    font-size: 26px;
+  }
+
+  .whatsapp-float i {
+    font-size: 30px;
+  }
+}
+
+
+/* whatSapp ka code yaha pe end hai show please aap yaha pe band karo  */
+
+.chat-popup {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 320px;
+  height: 420px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  display: none;
+  flex-direction: column;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+/* Header */
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.chat-header h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.menu, .close-chat {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Subtitle */
+.chat-subtitle {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Body */
+.chat-body {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  background: #f9f9f9;
+}
+
+.bot-msg,
+.user-msg {
+  max-width: 80%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.bot-msg {
+  background: #e6e6e6;
+}
+
+.user-msg {
+  background: #2b7cff;
+  color: #fff;
+  margin-left: auto;
+}
+
+/* Footer */
+.chat-footer {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.chat-footer input {
+  flex: 1;
+  border: none;
+  padding: 12px;
+  outline: none;
+}
+
+.chat-footer button {
+  background: #2b7cff;
+  color: #fff;
+  border: none;
+  padding: 0 18px;
+  cursor: pointer;
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .chat-popup {
+    left: 20px;
+    right: auto;
+    width: 300px;
+  }
+}
+
+
+/* UIkit slider smooth motion */
+/* ===============================
+   UIKIT SLIDER – ULTRA SMOOTH
+================================ */
+.uk-slider-items{
+  transition-timing-function: cubic-bezier(.22,1,.36,1) !important;
+}
+
+.why-rinse-gallery__image-slider{
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.why-rinse-gallery__image,
+.why-rinse-gallery__text-block li{
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(.22,1,.36,1);
+}
+
+/* FORCE ULTRA SMOOTH SLIDE */
+.uk-slider-items{
+  will-change: transform;
+  transition-property: transform !important;
+}
+
+/* Smooth manual scroll container */
+.why-rinse-gallery__image-slide-container{
+  overflow:hidden;
+}
+
+.uk-slider-items{
+  display:flex;
+  will-change: transform;
+}
+
+/* ===============================
+   TEXT SMOOTH TRANSITION
+================================ */
+.why-rinse-gallery__text-block li{
+  opacity:0;
+  transform:translateY(12px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s cubic-bezier(.22,1,.36,1);
+}
+
+.why-rinse-gallery__text-block li.gallery-text-show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* location add wala css code yaha pe hai  */ 
+.cities-section {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.cities-title {
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  color: #2b2b2b;
+}
+
+.cities-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
+
+.cities-col {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cities-col li {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 14px;
+  white-space: nowrap;
+}
+
+.city-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background: #ff7a00;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath d='M168 0C75.1 0 0 75.1 0 168c0 87.1 134.5 303.1 154.7 334.1a24 24 0 0 0 38.6 0C213.5 471.1 348 255.1 348 168 348 75.1 292.9 0 200 0zm0 240a72 72 0 1 1 0-144 72 72 0 0 1 0 144z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .cities-grid {
+    grid-template-columns: repeat(3, 1fr);
+     padding-left: 35px;   /* 👈 right move */
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .cities-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .cities-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .cities-col li {
+    font-size: 14px;
+  }
+}
+
+/* yaha pe end hota hai  */ 
+
+
+/* home page ka logo yaha se start hai  */
+
+ .logo-carousel__item img {
+  height: 40px;   /* pehle 24px tha */
+  width: auto;    /* aspect ratio safe rahega */
+} 
+
+/* yaha pe home page ka logo ka code end hai  */ 

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 4px;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        stroke-linejoin: round;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1410" data-name="Rectangle 1410" class="cls-1" width="64" height="64" transform="translate(-8 -8)"/>
+    </clipPath>
+  </defs>
+  <g id="ic_headphone" class="cls-2" transform="translate(8 8)">
+    <path id="Path_4636" data-name="Path 4636" class="cls-3" d="M6.516,23.537S.5,21.743.5,19.527V13.511C.5,9.5,6.516,9.5,6.516,9.5Z" transform="translate(0.503 9.551)"/>
+    <path id="Path_4637" data-name="Path 4637" class="cls-3" d="M20.5,23.537s6.016-1.795,6.016-4.011V13.511C26.516,9.5,20.5,9.5,20.5,9.5Z" transform="translate(20.61 9.551)"/>
+    <path id="Path_4638" data-name="Path 4638" class="cls-3" d="M28.537,16.5c0,8.021-6.985,11.962-14.037,12.032" transform="translate(14.578 16.588)"/>
+    <path id="Path_4639" data-name="Path 4639" class="cls-3" d="M17.521,25.511H11.505a2.005,2.005,0,1,1,0-4.011h6.016a2.005,2.005,0,1,1,0,4.011Z" transform="translate(9.551 21.615)"/>
+    <path id="Path_4640" data-name="Path 4640" class="cls-3" d="M37.591,18.548v-1a17.045,17.045,0,0,0-34.091,0v1" transform="translate(3.519 0.503)"/>
+  </g>
+</svg>

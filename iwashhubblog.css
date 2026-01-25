@@ -1,0 +1,430 @@
+/* =========================
+   Global Reset & Base
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f6f7fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.content-wrapper {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+.row {
+  display: flex;
+  gap: 24px;
+}
+
+/* =========================
+   TOP BLOG SECTION
+========================= */
+.blog-topsection {
+  padding: 40px 0;
+}
+
+.hometopsection {
+  align-items: flex-start;
+}
+
+.blog-topsection .leftpart {
+  flex: 2;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.blog-topsection .rightpart {
+  flex: 1;
+}
+
+/* Featured Blog */
+.leftpart .posttitle {
+  font-size: 26px;
+  margin: 16px 0 8px;
+}
+
+.leftpart .posttitle a:hover {
+  color: #4f46e5;
+}
+
+.thecatlinks a {
+  font-size: 14px;
+  color: #6366f1;
+  font-weight: 500;
+}
+
+.postdate,
+.min-read {
+  font-size: 13px;
+  color: #777;
+}
+
+.bottom-paragraph {
+  margin: 14px 0;
+  color: #444;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4f46e5;
+}
+
+/* =========================
+   SEARCH BOX
+========================= */
+.mainpageserach {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+}
+
+.search-field {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.search-submit {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #4f46e5;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* =========================
+   RIGHT SIDE SMALL POSTS
+========================= */
+.posts-list-container {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.single-post {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.single-post:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.single-post .posttitle {
+  font-size: 15px;
+  margin: 8px 0;
+}
+
+/* =========================
+   BLOG LISTING SECTION
+========================= */
+.bloglistingsection {
+  padding: 40px 0;
+}
+
+.bloglist .leftpart {
+  flex: 2;
+}
+
+.bloglist .rightpart {
+  flex: 1;
+}
+
+/* Section Title */
+.sectiontitle {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Blog Cards */
+.listofpostrow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.singleitemcard {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.singleitemcard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.postcontentbody {
+  padding: 16px;
+}
+
+.blogs-title-a {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.posttypeofdetails {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #444;
+}
+
+/* =========================
+   PAGINATION
+========================= */
+.pagination {
+  margin-top: 30px;
+}
+
+.page-numbers {
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #fff;
+  margin-right: 6px;
+  border: 1px solid #ddd;
+}
+
+.page-numbers.current {
+  background: #4f46e5;
+  color: #fff;
+  border-color: #4f46e5;
+}
+
+/* =========================
+   SIDEBAR – TOP CATEGORY
+========================= */
+.topcategorygroup {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.grouptitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.singlecategory {
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.singlecategory:last-child {
+  border-bottom: none;
+}
+
+.categoryname {
+  font-weight: 600;
+}
+
+.totalpostcategory {
+  font-size: 13px;
+  color: #777;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .listofpostrow {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .leftpart .posttitle {
+    font-size: 20px;
+  }
+
+  .blogs-title-a {
+    font-size: 16px;
+  }
+}
+
+
+
+
+/* footer code yaha se suru hai  */
+
+.site-footer {
+  background:  
+    radial-gradient(
+      circle at center,
+      #8f9bff 0%,
+      #6f7dff 30%,
+      #4a5cff 55%,
+      #2f3fd1 75%,
+      #1f2aa8 100%
+    );
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.social-icons {
+  margin: 15px 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-qr img {
+  width: 160px;
+  margin-top: 15px;
+}
+
+/* =========================
+   Mobile Responsive
+========================= */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-icons a {
+    margin: 0 8px;
+  }
+
+  .footer-qr img {
+    margin: 15px auto 0;
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  margin-right: 8px;
+  font-style: normal;
+  color: #000;
+}
+
+.icon.clock::before {
+  content: "🕒";
+}
+
+.icon.phone::before {
+  content: "📞";
+  color: black;
+}
+
+.icon.whatsapp::before {
+  content: "💬";
+}
+
+.icon.mail::before {
+  content: "✉️";
+}
+
+.social-icons a {
+  color: #000;
+  font-size: 18px;
+  margin-right: 12px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ff7a00; /* brand hover color (optional) */
+}
+
+/* footer yaha pe end hai  */
+

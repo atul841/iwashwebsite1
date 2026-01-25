@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="ic_mail" transform="translate(21 5)">
+    <g id="Group_1651" data-name="Group 1651" transform="translate(-0.234 0.284)">
+      <path id="Path_4641" data-name="Path 4641" class="cls-1" d="M48.031.5V30.747a4.334,4.334,0,0,1-4.321,4.321H4.821A4.334,4.334,0,0,1,.5,30.747V.5" transform="translate(-13.266 9.216)"/>
+      <path id="Path_4642" data-name="Path 4642" class="cls-1" d="M48.031.5,26.806,18.1a4.326,4.326,0,0,1-5.082,0L.5.5Z" transform="translate(-13.266 9.216)"/>
+      <line id="Line_116" data-name="Line 116" class="cls-1" x2="46" transform="translate(-12 10)"/>
+    </g>
+    <rect id="Rectangle_1417" data-name="Rectangle 1417" class="cls-2" width="64" height="64" transform="translate(-21 -5)"/>
+  </g>
+</svg>
