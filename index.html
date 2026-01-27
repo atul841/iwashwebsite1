@@ -463,7 +463,7 @@
         <figure class="figure--logo logo--nav-center"></figure>
       </a> -->
           <a id="nav__a--home--logo" class="uk-navbar-item uk-logo nav__link" href="../" aria-label="Home">
-            <img src="lg2.png" alt="iWash Hub" style="height:32px;">
+            <img src="iwashhublogo.png" alt="iWash Hub" style="height:62px;">
           </a>
 
 
@@ -538,23 +538,24 @@
 
 }
 
-.navbar {
-  background-color: rgba(255, 255, 255, 0.97);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
+
 /* Body gap so content jump na kare */
 body.has-fixed-nav {
   padding-top: 100px;
 }
 
-.uk-navbar-container {
-    background-color: rgba(255, 255, 255, 0.97);
-    transition: background-color .3s ease;
-}
+
 
 .uk-navbar-container.uk-navbar-transparent {
-    background-color: rgba(255, 255, 255, 0.96) !important;
+  background-color: transparent !important;
+  transition: background-color 0.3s ease;
 }
+
+/* Scroll ke baad */
+.uk-navbar-container.scrolled {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+}
+
 
 
 
@@ -594,6 +595,17 @@ body.has-fixed-nav {
     } else {
       navbar.classList.remove("navbar--fixed");
       body.classList.remove("has-fixed-nav");
+    }
+  });
+
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".uk-navbar-container");
+    if (!navbar) return;
+
+    if (window.scrollY > 800) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
     }
   });
   </script>
