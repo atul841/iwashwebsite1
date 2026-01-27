@@ -133,7 +133,7 @@
 /* 📱 Mobile view */
 @media (max-width: 768px) {
   .ripple-effect-background {
-    background-position: -110px 40px; /* image left chali jayegi */
+    background-position: -110px 45.5px; /* image left chali jayegi */
     top: -100px;
   }
 }
@@ -236,8 +236,8 @@
   }
 
   .sl-img {
-    left: -13%;
-    top: 77%;
+    left: -14.5%;
+    top: 76%;
     transform: translateX(50%);
   }
 }
