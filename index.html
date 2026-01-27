@@ -8,7 +8,8 @@
   <meta name="theme-color" content="#FFF" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#1E1F21" media="(prefers-color-scheme: dark)">
 
-
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylemap.css">
 
   <!-- Microsoft Favicons -->
 
@@ -221,8 +222,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" media="all" href="themes/sws/css/modifiedStyle.css?t8i709">
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="stylemap.css">
+  
   <!-- Copyright © Rinse. All rights reserved. -->
   <!-- Load Ketch Smart Tag -->
   <script>!function () { window.semaphore = window.semaphore || [], window.ketch = function () { window.semaphore.push(arguments) }; var e = document.createElement("script"); e.type = "text/javascript", e.src = "https://global.ketchcdn.com/web/v3/config/rinse/website_smart_tag/boot.js", e.defer = e.async = !0, document.getElementsByTagName("head")[0].appendChild(e) }();</script>
@@ -553,6 +553,64 @@
     <div class="ribbon__container ribbon__container--base ribbon__container--base--home">
 
     </div>
+
+  <style>
+    /* Fixed navbar on scroll */
+  .navbar--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  }
+
+  /* Body gap so content jump na kare */
+  body.has-fixed-nav {
+    padding-top: 100px; /* navbar height ke hisaab se adjust */
+  }
+
+  </style>
+
+  <script>
+    
+  const fadeInNav = document.querySelector('[data-nav-fade-in-on-scroll]');
+  const fadeOutNav = document.querySelector('[data-nav-fade-out-on-scroll]');
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 80) {
+      fadeInNav.style.opacity = "1";
+      fadeInNav.style.visibility = "visible";
+
+      fadeOutNav.style.opacity = "0";
+      fadeOutNav.style.visibility = "hidden";
+    } else {
+      fadeInNav.style.opacity = "0";
+      fadeInNav.style.visibility = "hidden";
+
+      fadeOutNav.style.opacity = "1";
+      fadeOutNav.style.visibility = "visible";
+    }
+  });
+
+
+
+  const navbar = document.getElementById("navbar");
+  const body = document.body;
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 80) {
+      navbar.classList.add("navbar--fixed");
+      body.classList.add("has-fixed-nav");
+    } else {
+      navbar.classList.remove("navbar--fixed");
+      body.classList.remove("has-fixed-nav");
+    }
+  });
+  </script>
+
+
 
     <main id="main-content" tabindex="-1" class=" main--sticky-footer ">
 
