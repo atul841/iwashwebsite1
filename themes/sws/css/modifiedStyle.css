@@ -126,6 +126,8 @@
   max-width: 750px;
   aspect-ratio: 1 / 1;
   height: 600px;
+  
+ 
 }
 
 /* 📱 Mobile view */
@@ -177,7 +179,7 @@
 ================================ */
 .sl-img {
   position: absolute;
-  bottom: 46%;
+  bottom: 47.5%;
   right: 43%;
   max-width: 120px;
   user-select: none;
