@@ -231,15 +231,24 @@
 
 
 
+
+
+
 function updateStateContent(stateName) {
-  const content =
+  let content =
     stateContentMap[stateName] ||
     "Is state ke liye jankari jald hi available hogi.";
 
+  // ✅ iWash Hub ko bold + line breaks HTML me
+  content = content
+    .replaceAll("iWash Hub", "<strong>iWash Hub</strong>")
+    .replaceAll("\n", "<br>");
+
   jQuery("#stateDescription").fadeOut(150, function () {
-    jQuery(this).text(content).fadeIn(200);
+    jQuery(this).html(content).fadeIn(200); // 👈 text ❌ → html ✅
   });
 }
+
 
       function clickedAnimation() {
         jQuery('.IN-LD').find('.enabled').prev().removeClass('makeVisible');

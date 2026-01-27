@@ -141,6 +141,34 @@ function sendMessage() {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+
+  // sirf mobile ke liye
+  if (window.innerWidth <= 576) {
+
+    const states = document.querySelectorAll(
+      ".india-map svg .enabled, .india-map svg .dis"
+    );
+
+    const target = document.getElementById("stateSelect");
+
+    states.forEach(state => {
+      state.addEventListener("click", function () {
+
+        if (target) {
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }
+
+      });
+    });
+
+  }
+});
+
+
 
 
 

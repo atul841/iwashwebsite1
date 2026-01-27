@@ -348,22 +348,7 @@
 <body id="home"
   class="body--with-announcement-banner body--relative background--white preload preload-sticky page--home">
 
-  <div id="lead-capture-popup-container">
-    <!-- React injected here -->
-  </div>
-
-  <div class="fixed-bottom-cta-wrapper fixed-bottom-cta-wrapper--in-nav-on-mobile">
-    <!-- NOTE: Click event listener and innerText will be set via JS to trigger modal to open -->
-    <button class="lead-capture-popup-trigger " data-lead-capture-popup-trigger
-      data-segment-cta="lead-capture-popup-trigger" data-segment-cta-location="fixed-bottom"
-      style="display: none;"></button>
-
-  </div>
-
-  <ul class="rinse-button--primary__skip-links skip-links">
-    <li><a href="#main-content" class="hero-cta-callout__button rinse-button rinse-button--primary__skip-links"
-        role="button">Skip to Main Content</a></li>
-  </ul>
+  
 
   <div class=" uk-offcanvas-content page__wrapper content__container content__container--sticky-footer">
 
@@ -384,7 +369,7 @@
             <li class="nav-item nav-item--logo nav-item--home">
               <a id="nav__a--home" class="nav__link nav-text-logo" href="../" aria-label="Home">
 
-                <img src="iwashhublogo.png" alt="iWash Hub" style="height:72px;">
+                <img src="iwashhublogo.png" alt="iWash Hub" style="height:82px;">
 
               </a>
             </li>
@@ -610,7 +595,7 @@
               <span class="span--orange600" style="font-size: 55px; ">so you can take care of your family.</span>
             </h1>
             <div class="hero-subtitle hero-subtitle--video-hero hero-subtitle--home">
-              From pickup to fresh delivery — iWashhub takes care of it all.
+              From pickup to fresh delivery — iWash Hub takes care of it all.
             </div>
           </div>
 
@@ -1004,7 +989,7 @@
                     <p style="font-style: italic;">
                       Affordable <span class="nowrap">Wash &amp; Fold</span> by the kg.<br aria-hidden="true">
                       Standard delivery in <span class="nowrap">24 hours</span>,<br aria-hidden="true">
-                      plus <span class="nowrap">4 hours</span> express option.
+                      plus <span class="nowrap"><strong>4 hours</strong></span> <strong>express option.</strong>
                     </p>
 
 
@@ -2031,7 +2016,7 @@
                           <div class="containers state">
                             <div class="left_side">
                               <h2 class="heading2" style="font-size: 23px;"></h2>
-                              <div class="state-select">
+                              <div class="state-select" id="stateSelect">
 
                                 <!-- <div class="state-logo"><img src="themes/sws/assets/images/madhyaPardesh.png" width="80" height="80" alt="state-logo"></div> -->
 
@@ -2891,18 +2876,52 @@
     <!-- Floating Chat & WhatsApp -->
     <div class="floating-chat-wrap">
 
-      <!-- Chat Box Icon -->
-      <a href="javascript:void(0)" class="chat-float" onclick="toggleChat()">
-        <i class="fas fa-comment-dots"></i>
-      </a>
+  <!-- Robot Chat Icon -->
+ <a href="javascript:void(0)" class="chat-float" onclick="toggleChat()">
+  <img 
+    src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExenprOTkwaHJ4MGtsYTV3eHZhZ3dxZmhqZjY0a2hmdThnN29jcG10NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xFYs2LARiXps9uZFhq/giphy.gif" 
+    alt="AI Robot">
+</a>
 
 
-      <!-- WhatsApp Icon -->
-      <a href="https://wa.me/918948310077" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-      </a>
 
-    </div>
+  <!-- WhatsApp Icon (same) -->
+  <!-- <a href="https://wa.me/918948310077" 
+     class="whatsapp-float" 
+     target="_blank" 
+     aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a> -->
+
+</div>
+
+<style>
+  .chat-float {
+  width: 60px;
+  height: 72px;
+  background: #eaf4ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 14px;
+}
+
+.chat-float img {
+  width: 110px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.chat-float:hover {
+  transform: scale(1.1);
+}
+
+  
+</style>
 
     <!-- Chat Popup -->
     <div class="chat-popup" id="chatPopup">
@@ -2934,8 +2953,8 @@
   </div>
 
   <!-- This is the off-canvas -->
-  <div id="nav--mobile" uk-offcanvas="mode: reveal; overlay: true">
-    <div class="uk-offcanvas-bar">
+  <div id="nav--mobile" uk-offcanvas="mode: reveal; overlay: true" >
+    <div class="uk-offcanvas-bar" style="background-color: #1f2aa8;">
 
 
       <a id="nav-offcanvas__a--close" aria-label="Close navigation drawer"
@@ -2946,7 +2965,7 @@
 
           <li>
             <a id="nav-offcanvas__a--home" class="nav__link nav-offcanvas__link nav-offcanvas__link--home"
-              href="index.htm">
+              href="../">
               <span class="nav-offcanvas__icon rinse-icon--home"></span>
               <span class="nav-offcanvas__label">Home</span>
             </a>
@@ -2956,7 +2975,7 @@
             <ul class="nav-offcanvas__accordion" uk-accordion>
               <li>
                 <a id="nav-offcanvas__a--services-pricing"
-                  class="nav__link nav-offcanvas__link nav-offcanvas__link--services-pricing" href="#">
+                  class="nav__link nav-offcanvas__link nav-offcanvas__link--services-pricing" href="../">
                   <span class="nav-offcanvas__icon rinse-icon--grid"></span>
                   <span class="nav-offcanvas__label">Services and
                     Pricing</span>
@@ -2969,7 +2988,7 @@
 
           <li>
             <a id="nav-offcanvas__a--partner" class="nav__link nav-offcanvas__link nav-offcanvas__link--partner"
-              href="#">
+              href="../">
               <span class="nav-offcanvas__icon rinse-icon--people"></span>
               <span class="nav-offcanvas__label">For Business</span>
             </a>
@@ -2996,7 +3015,23 @@
   </div>
   <div id="react-video-container">
   </div>
+
+  <style>
+    /* Offcanvas nav icons dark + blur */
+.nav-offcanvas__icon {
+  filter: brightness(0.2) blur(0.8px);
+  opacity: 0.85;
+  
+}
+
+  </style>
   <script src="js.js"></script>
+  <style>
+    
+  </style>
+
+  
+
 
   <!-- Map ka code start here that  -->
 
