@@ -128,6 +128,15 @@
   height: 600px;
 }
 
+/* 📱 Mobile view */
+@media (max-width: 768px) {
+  .ripple-effect-background {
+    background-position: -110px 40px; /* image left chali jayegi */
+    top: -100px;
+  }
+}
+
+
 /* ===============================
    SVG STATES
 ================================ */
@@ -188,11 +197,17 @@
 /* Laptop / Small Desktop */
 @media (max-width: 1200px) {
   .state-select {
-    margin-top: -380px;
+    margin-top: -480px;
+    top: 200px;
   }
 
   .india-map {
     height: 850px;
+  } 
+
+  .ripple-effect-background{ 
+    position: relative;
+    right: 40px;
   }
 }
 
@@ -204,7 +219,8 @@
   }
 
   .state-wrapper .state .left_side {
-    order: 2;
+    order: 2; 
+    
   }
 
   .india-map {
@@ -218,10 +234,20 @@
   }
 
   .sl-img {
-    right: 50%;
+    left: -13%;
+    top: 80%;
     transform: translateX(50%);
   }
 }
+
+@media (max-width: 768px) {
+  .state-select {
+    position: relative;
+    top: -110px;
+    right: 115px;
+  }
+}
+
 
 /* Mobile */
 @media (max-width: 576px) {
@@ -258,7 +284,8 @@
 @media (max-width: 420px) {
   .state-select {
     margin-top: 0;
-  }
+  } 
+  
 }
 
 

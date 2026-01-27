@@ -2648,6 +2648,10 @@
   .description {
     left: 308.873px !important;
     top: 3528.7px !important;
+  } 
+  .ripple-effect-background { 
+    position: relative;
+    margin-right: 100px;
   }
 }
 
