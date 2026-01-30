@@ -428,3 +428,17 @@ img {
 
 /* footer yaha pe end hai  */
 
+.site-footer {
+  background:  
+    radial-gradient(
+      circle at center,
+      #8f9bff 0%,
+      #6f7dff 30%,
+      #4a5cff 55%,
+      #2f3fd1 75%,
+      #1f2aa8 100%
+    );
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}

@@ -50,7 +50,7 @@
 
   </title>
 
-  <link rel="stylesheet" href="assets/bundles/base_rebrand.1.sha256-20c8910417.css">
+<link rel="stylesheet" href="assets/bundles/base_rebrand.1.sha256-20c8910417.css">
   <script type="module" crossorigin src="assets/bundles/base_rebrand.1.sha256-f8fc937e55.js"></script>
   <link href="assets/bundles/internal_customer_edit_inner.1.sha256-34481b9084.js" type="text/javascript"
     crossorigin="anonymous" rel="modulepreload" as="script">
@@ -239,7 +239,7 @@
   <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.sha256-1505975189.png">
 
   <!-- Apple Favicons -->
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.sha256-a1da9262ef.png">
+  <lin  k rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.sha256-a1da9262ef.png">
   <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.sha256-501d391344.png">
   <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.sha256-1a162c90f4.png">
   <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.sha256-787e37e8c0.png">
@@ -266,51 +266,6 @@
 
   <link href='index.htm' rel='canonical'>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- Start Stripe -->
-
-
-
-
-  <!-- Start Segment -->
-
-
   <!-- <script type="text/javascript">
     !function () {
       var analytics = window.analytics = window.analytics || []; if (!analytics.initialize) if (analytics.invoked) ; else {
@@ -320,33 +275,167 @@
     }();
   </script> -->
 
-
-
-  <!-- pixels -->
-  <style>
-
-  </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </head>
 
 <body id="home"
   class="body--with-announcement-banner body--relative background--white preload preload-sticky page--home">
+    
+
+      <!-- popupfrom page add here that  -->
+       <!-- Popup Overlay -->
+<div id="leadPopup" class="popup-overlay">
+  <div class="popup-box">
+    <span id="closePopup" class="close-btn">✖</span>
+
+    <h2>Get Started</h2>
+
+    <form id="leadForm" action="send-mail.php" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="tel" name="mobile" placeholder="Mobile Number" required>
+  <input type="text" name="city" placeholder="City" required>
+
+  <button type="submit">Submit</button>
+</form>
+
+  </div>
+</div>
+
+
+<!-- end here that the part of these -->
+
+<style>
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  backdrop-filter: blur(4px);
+}
+
+/* Popup Box */
+.popup-box {
+  background: #ffffff;
+  padding: 30px 26px;
+  width: 92%;
+  max-width: 420px;
+  border-radius: 14px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  animation: popupFade 0.4s ease-out;
+}
+
+/* Title */
+.popup-box h2 {
+  margin-bottom: 18px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* Inputs */
+.popup-box input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.popup-box input:focus {
+  border-color: #0b3cff;
+  box-shadow: 0 0 0 3px rgba(11, 60, 255, 0.15);
+}
+
+/* Button */
+.popup-box button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #0b3cff, #1f6bff);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.popup-box button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(11, 60, 255, 0.35);
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font-size: 18px;
+  color: #555;
+  cursor: pointer;
+  display: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #000;
+  transform: rotate(90deg);
+}
+
+/* Animation */
+@keyframes popupFade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+</style>
+
+<script>
+  window.onload = function () {
+    const popup = document.getElementById("leadPopup");
+    const closeBtn = document.getElementById("closePopup");
+    const form = document.getElementById("leadForm");
+
+    // Agar pehle hi popup dikh chuka hai
+    if (localStorage.getItem("popupShown")) {
+      popup.style.display = "none";
+      return;
+    }
+
+    // 10 sec baad close button dikhe
+    setTimeout(() => {
+      closeBtn.style.display = "block";
+    }, 10000);
+
+    // Close popup
+    closeBtn.onclick = function () {
+      popup.style.display = "none";
+      localStorage.setItem("popupShown", "true");
+    };
+
+    // Form submit pe popup band + save
+    form.addEventListener("submit", function () {
+  localStorage.setItem("popupShown", "true");
+});
+
+  };
+</script>
+
 
   
 
@@ -2907,7 +2996,7 @@ body.has-fixed-nav {
             <li><a href="#">Prepaid Plans</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Terms and Conditions</a></li>
-            <li><a href="../career/index1.html">Career</a></li>
+            <li><a href="index1.html">Career</a></li>
             <li><a href="#">Get Franchise</a></li>
             <li><a href="#">Consultancy</a></li>
             <li><a href="#">Our Stores</a></li>
