@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $city   = htmlspecialchars(trim($_POST['city']));
 
   // Receiver emails (3 IDs)
-  $to = "atulpande433@gmail.com, atulp0283@gmail.com, atulpande333@gmail.com";
+  $to = "sales_service_rohit@iwashhub.com, upsalesaditya@iwashhub.com, Indiasales.yash@iwashhub.com";
 
   // Email subject
   $subject = "New Lead Received - iWash Hub";

@@ -4,13 +4,11 @@
   display: none !important;
 }
 
-
 /* Explore section – completely disable */
 .explore-wrapper,
 .explore {
   display: none !important;
 }
-
 
 @media (max-width: 768px) {
   .india-map {
@@ -21,9 +19,6 @@
     overflow: visible !important;
   }
 }
-
-
-
 
 .state-info-card {
   margin-top: 12px;
@@ -46,19 +41,18 @@
   color: #ff6b00;
 }
 
-
-/* Dynamic State Content Text */
-
 /* ===============================
    State Office Info UI
 ================================ */
 
 #stateDescription {
-  white-space: pre-line;          /* \n ko new line me dikhane ke liye */
+  margin: 0;
+  white-space: pre-line; /* \n ko new line me dikhane ke liye */
   font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.7;
-  color: #2c2c2c;
+  color: #000000;
+  
 
   background: #ffffff;
   padding: 14px 16px;
@@ -69,11 +63,17 @@
   transition: all 0.3s ease; 
 }
 
-/* First line – Company Name */
+/* ❌ first line bold removed */
 #stateDescription::first-line {
-  font-weight: 600;
   font-size: 15px;
   color: #111;
+  font-weight: 400;
+}
+
+/* ❌ agar HTML me <strong> ya <b> aaye to bhi normal rahe */
+#stateDescription strong,
+#stateDescription b {
+  font-weight: 400;
 }
 
 /* Hover effect */
@@ -97,7 +97,6 @@
   }
 }
 
-
 /* ===============================
    State Address Card UI
 ================================ */
@@ -113,23 +112,6 @@
   border-left: 4px solid #4a5cff;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-}
-
-/* Text formatting */
-#stateDescription {
-  margin: 0;
-  white-space: pre-line; /* line breaks enable */
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.7;
-  color: #2c2c2c;
-}
-
-/* First line – Company name */
-#stateDescription::first-line {
-  font-weight: 600;
-  font-size: 15px;
-  color: #111;
 }
 
 /* Hover effect */
@@ -155,4 +137,3 @@
     font-size: 14px;
   }
 }
-

@@ -239,15 +239,16 @@ function updateStateContent(stateName) {
     stateContentMap[stateName] ||
     "Is state ke liye jankari jald hi available hogi.";
 
-  // ✅ iWash Hub ko bold + line breaks HTML me
+  // ✅ iWash Hub ko bold karo (safe – double bold nahi hoga)
   content = content
-    .replaceAll("iWash Hub", "<strong>iWash Hub</strong>")
+    .replace(/iWash Hub/g, "<strong>iWash Hub</strong>")
     .replaceAll("\n", "<br>");
 
   jQuery("#stateDescription").fadeOut(150, function () {
-    jQuery(this).html(content).fadeIn(200); // 👈 text ❌ → html ✅
+    jQuery(this).html(content).fadeIn(200);
   });
 }
+
 
 
       function clickedAnimation() {
