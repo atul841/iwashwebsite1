@@ -128,7 +128,30 @@
   height: 600px;
   
  
+} 
+
+/* Default (mobile + tablet) */
+.ripple-effect-background {
+  background: url("../assets/images/m1.png") no-repeat center;
+  background-size: contain;
+  width: 100%;
+  max-width: 750px;
+  aspect-ratio: 1 / 1;
+  height: 600px;
 }
+
+/* Laptop / Desktop only */
+@media (min-width: 1024px) {
+  .ripple-effect-background {
+    background-size: 110%; /* image badi ho jayegi */
+    
+    background-position: top;
+     background-position: -34px -44px; /* left , down */
+    
+    
+  }
+}
+
 
 /* 📱 Mobile view */
 @media (max-width: 768px) {
