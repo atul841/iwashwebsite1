@@ -7,9 +7,11 @@
 
   <meta name="theme-color" content="#FFF" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#1E1F21" media="(prefers-color-scheme: dark)">
-
+  
+    <link href="685136558672924f1602462a/css/task-cloud.webflow.shared.ffe6fd26c.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="stylemap.css">
+  
 
   <!-- Microsoft Favicons -->
 
@@ -275,6 +277,9 @@
     }();
   </script> -->
 
+
+
+
 </head>
 
 <body id="home"
@@ -315,15 +320,15 @@
 
             <li class="nav-item nav-item--services-pricing">
               <a id="nav__a--services-pricing" class="nav__link " href="../"
-                style="color: rgb(0, 0, 0);">Services and Pricing</a>
+                >Services and Pricing</a>
             </li>
 
             <li class="nav -item nav-item--rinse-repeat">
-              <a id="nav__a--rinse-repeat" class="nav__link " href="#" style="color: rgb(0, 0, 0);">Wash Repeat</a>
+              <a id="nav__a--rinse-repeat" class="nav__link " href="#" >Wash Repeat</a>
             </li>
 
             <li class="nav-item nav-item--partner">
-              <a id="nav__a--partner" class="nav__link " href="#" style="color: rgb(0, 0, 0);">For Business</a>
+              <a id="nav__a--partner" class="nav__link " href="#" >For Business</a>
             </li>
 
             
@@ -336,7 +341,7 @@
 
             <li class="nav-item nav-item--log-in">
 
-              <a data-go-to-login="header" class="nav__link nav__link--log-in" href="#" style="color: rgb(0, 0, 0);">Log
+              <a data-go-to-login="header" class="nav__link nav__link--log-in" href="#">Log
                 in</a>
 
             </li>
@@ -546,132 +551,13 @@ body.has-fixed-nav {
       navbar.classList.remove("scrolled");
     }
   });
-  </script>
-
-    <!-- Popup Overlay -->
-<!-- Popup Overlay -->
-<div class="popup-overlay" id="laundryPopup" style="display:none;">
-  <div class="popup-box">
-
-    <!-- Close icon (10 sec baad dikhega) -->
-    <span class="popup-close" id="popupClose" onclick="closePopup()" style="display:none;">✕</span>
-
-    <h2>Welcome to iWashHub 🧺</h2>
-    <p>Schedule your laundry pickup in just one click</p>
-
-    <form id="popupForm">
-
-      <!-- Name (only letters) -->
-      <input 
-        type="text"
-        name="name"
-        placeholder="Your Name"
-        required
-        pattern="[A-Za-z ]+"
-        title="Please enter letters only">
-
-      <!-- Mobile (only numbers, exactly 10 digits) -->
-      <input 
-        type="tel"
-        name="mobile"
-        placeholder="Mobile Number"
-        required
-        maxlength="10"
-        pattern="[0-9]{10}"
-        title="Enter exactly 10 digit mobile number">
-
-      <!-- City -->
-      <input 
-        type="text"
-        name="city"
-        placeholder="City"
-        required>
-
-      <textarea placeholder="Your Laundry Requirement"></textarea>
-
-      <button type="submit">Submit & Get Offer</button>
-    </form>
-  </div>
-</div>
+  </script> 
 
 
-<style>
-.popup-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.65);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
+<!-- POPUP OVERLAY -->
 
-.popup-box {
-  background: #ffffff;
-  width: 90%;
-  max-width: 420px;
-  padding: 30px;
-  border-radius: 16px;
-  text-align: center;
-  position: relative;
-  animation: popupZoom 0.4s ease;
-}
 
-@keyframes popupZoom {
-  from { transform: scale(0.85); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
-}
 
-.popup-box h2 {
-  color: #022078;
-  margin-bottom: 8px;
-}
-
-.popup-box p {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 18px;
-}
-
-.popup-box input,
-.popup-box textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 12px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  font-size: 14px;
-  outline: none;
-}
-
-.popup-box textarea {
-  resize: none;
-  height: 80px;
-}
-
-.popup-box button {
-  width: 100%;
-  padding: 12px;
-  background: #022078;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.popup-box button:hover {
-  background: #01165c;
-}
-
-.popup-close {
-  position: absolute;
-  top: 12px;
-  right: 15px;
-  cursor: pointer;
-  font-size: 18px;
-}
-</style>
 
 
     
@@ -1362,7 +1248,846 @@ body.has-fixed-nav {
 -->
       <!-- add this part off that  review section here that  -->
 
-      <section class="testimonial-wrap">
+      <!-- <section class="section client" style="background-color: white;">
+      <div class="w-layout-blockcontainer container w-container">
+        <div class="client-wrapper">
+          <div class="section-title-wrapper client">
+            <h2 class="section-title" style="color: white;">What Our Clients Say.</h2>
+            <p class="section-details client" style="color: white;">From startups to global enterprises, thousands of teams rely on our platform to deliver projects on time.</p>
+          </div>
+          <div class="client-wrap">
+            <div class="client-marquee-wrap">
+              <div class="client-flex-wrap">
+                <div class="client-single-slide _01">
+                  <div class="client-single-wrap stroke-linear-3">
+                    <div class="client-content-wrap">
+                      <div class="client-comment">
+                        “This platform completely transformed the way we manage projects. team’s productivity in months.”
+                      </div>
+                      <div class="cilent-author-wrap">
+                        <img src="685136558672924f1602462a/68c6856cad2f1150decd1fe9_Client-1.webp" loading="lazy" alt="Client Image" class="client-image">
+                        <div class="client-details">
+                          <div class="client-name">
+                            Sarah Mitchell
+                          </div>
+                          <div class="client-position">
+                            Product Manager
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="client-single-wrap stroke-linear-3">
+                    <div class="client-content-wrap">
+                      <div class="client-comment">
+                        "The AI flagged a blocked task before I even realized I was blocked. Kinda spooky. I really love this app."
+                      </div>
+                      <div class="cilent-author-wrap">
+                        <img src="685136558672924f1602462a/68c6856ca7fced13a8f30f00_Client-2.webp" loading="lazy" alt="Client Image" class="client-image">
+                        <div class="client-details">
+                          <div class="client-name">
+                            Benedetta Chan
+                          </div>
+                          <div class="client-position">
+                            CEO of Grind.io
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="client-single-wrap stroke-linear-3">
+                    <div class="client-content-wrap">
+                      <div class="client-comment">
+                        "Honestly? This tool manages our projects better than I ever did. I’m not even mad.”
+                      </div>
+                      <div class="cilent-author-wrap">
+                        <img src="685136558672924f1602462a/68c6856f085a37dc80be31ad_Client-3.webp" loading="lazy" alt="Client Image" class="client-image">
+                        <div class="client-details">
+                          <div class="client-name">
+                            Benedetta Chan
+                          </div>
+                          <div class="client-position">
+                            CEO of Grind.io
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="client-single-slide _01">
+                  <div class="client-single-wrap stroke-linear-3">
+                    <div class="client-content-wrap">
+                      <div class="client-comment">
+                        “I love the clean interface and how everything is in one place. No more apps — it’s all here.”
+                      </div>
+                      <div class="cilent-author-wrap">
+                        <img src="685136558672924f1602462a/68c6856c60c963ca4e9e62bf_Client-5.webp" loading="lazy" alt="Client Image" class="client-image">
+                        <div class="client-details">
+                          <div class="client-name">
+                            Kevin Roberts
+                          </div>
+                          <div class="client-position">
+                            COO, Tech Solutions
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="client-single-wrap stroke-linear-3">
+                    <div class="client-content-wrap">
+                      <div class="client-comment">
+                        “The analytics dashboard gives us instant visibility into project health.”
+                      </div>
+                      <div class="cilent-author-wrap">
+                        <img src="685136558672924f1602462a/68c6856fa653c2150a44226b_Client-7.webp" loading="lazy" alt="Client Image" class="client-image">
+                        <div class="client-details">
+                          <div class="client-name">
+                            Laura Chen
+                          </div>
+                          <div class="client-position">
+                            Marketing Director
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="client-single-wrap stroke-linear-3">
+                    <div class="client-content-wrap">
+                      <div class="client-comment">
+                        "Feels like our AI tech lead. Except it doesn't ask for stock options. We got rid of three tools and a daily standup. Zero regrets.”
+                      </div>
+                      <div class="cilent-author-wrap">
+                        <img src="685136558672924f1602462a/68c6856cad2f1150decd1fe9_Client-1.webp" loading="lazy" alt="Client Image" class="client-image">
+                        <div class="client-details">
+                          <div class="client-name">
+                            Benedetta Chan
+                          </div>
+                          <div class="client-position">
+                            CEO of Grind.io
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="client-single-slide _01">
+                  <div class="client-single-wrap stroke-linear-3">
+                    <div class="client-content-wrap">
+                      <div class="client-comment">
+                        “The automation features save us hours every week. Our clients are happier, and our team is less stressed.”
+                      </div>
+                      <div class="cilent-author-wrap">
+                        <img src="685136558672924f1602462a/68c6856c77260d7d2e5eafd6_Client-4.webp" loading="lazy" alt="Client Image" class="client-image">
+                        <div class="client-details">
+                          <div class="client-name">
+                            Priya Sharma
+                          </div>
+                          <div class="client-position">
+                            Project Coordinator
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="client-single-wrap stroke-linear-3">
+                    <div class="client-content-wrap">
+                      <div class="client-comment">
+                        “We’ve tried several tools before, but nothing compares to this. The Gantt charts and real-time.”
+                      </div>
+                      <div class="cilent-author-wrap">
+                        <img src="685136558672924f1602462a/68c6856ea8259bc8b2ccc79a_Client-6.webp" loading="lazy" alt="Client Image" class="client-image">
+                        <div class="client-details">
+                          <div class="client-name">
+                            Michael Carter
+                          </div>
+                          <div class="client-position">
+                            CEO, BuildWorks
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="client-single-wrap stroke-linear-3">
+                    <div class="client-content-wrap">
+                      <div class="client-comment">
+                        “Onboarding was seamless, and our team was up and running in less than a day. The support team.”
+                      </div>
+                      <div class="cilent-author-wrap">
+                        <img src="685136558672924f1602462a/68c6856cad2f1150decd1fe9_Client-1.webp" loading="lazy" alt="Client Image" class="client-image">
+                        <div class="client-details">
+                          <div class="client-name">
+                            Benedetta Chan
+                          </div>
+                          <div class="client-position">
+                            CEO of Grind.io
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="client-center-item">
+              <div class="client-single-wrap">
+                <div class="client-content-wrapper">
+                  <div class="client-comment-wrap">
+                    <div class="client-comment-text">
+                      “We’ve delivered more projects on time since switching. The time tracking and task automation are worth every penny.”
+                    </div>
+                  </div>
+                  <div class="client-author-wrapper">
+                    <img src="685136558672924f1602462a/68c69d72021d47e15c69198c_client-logo.svg" loading="lazy" alt="Client Logo" class="client-log">
+                    <div class="cilent-author-wrap">
+                    <div class="client-details _01">
+                      <div class="client-name">
+                        Daniel Lee
+                      </div>
+                      <div class="client-position">
+                        BrightEdge Marketing
+                      </div>
+                    </div><img src="685136558672924f1602462a/68c6856cad2f1150decd1fe9_Client-1.webp" loading="lazy" alt="Client Image" class="client-image"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="client-bottom-wrap">
+                <div class="client-marquee-wrap">
+                  <div class="client-flex-wrap">
+                    <div class="client-single-slide _01">
+                      <div class="client-single-wrap stroke-linear-3">
+                        <div class="client-content-wrap">
+                          <div class="client-comment">
+                            “This platform completely transformed the way we manage projects. team’s productivity in months.”
+                          </div>
+                          <div class="cilent-author-wrap">
+                            <img src="685136558672924f1602462a/68c6856cad2f1150decd1fe9_Client-1.webp" loading="lazy" alt="Client Image" class="client-image">
+                            <div class="client-details">
+                              <div class="client-name">
+                                Sarah Mitchell
+                              </div>
+                              <div class="client-position">
+                                Product Manager
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="client-single-wrap stroke-linear-3">
+                        <div class="client-content-wrap">
+                          <div class="client-comment">
+                            "The AI flagged a blocked task before I even realized I was blocked. Kinda spooky. I really love this app."
+                          </div>
+                          <div class="cilent-author-wrap">
+                            <img src="685136558672924f1602462a/68c6856ca7fced13a8f30f00_Client-2.webp" loading="lazy" alt="Client Image" class="client-image">
+                            <div class="client-details">
+                              <div class="client-name">
+                                Benedetta Chan
+                              </div>
+                              <div class="client-position">
+                                CEO of Grind.io
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="client-single-wrap stroke-linear-3">
+                        <div class="client-content-wrap">
+                          <div class="client-comment">
+                            "Honestly? This tool manages our projects better than I ever did. I’m not even mad.”
+                          </div>
+                          <div class="cilent-author-wrap">
+                            <img src="685136558672924f1602462a/68c6856f085a37dc80be31ad_Client-3.webp" loading="lazy" alt="Client Image" class="client-image">
+                            <div class="client-details">
+                              <div class="client-name">
+                                Benedetta Chan
+                              </div>
+                              <div class="client-position">
+                                CEO of Grind.io
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="client-single-slide _01">
+                      <div class="client-single-wrap stroke-linear-3">
+                        <div class="client-content-wrap">
+                          <div class="client-comment">
+                            “I love the clean interface and how everything is in one place. No more apps — it’s all here.”
+                          </div>
+                          <div class="cilent-author-wrap">
+                            <img src="685136558672924f1602462a/68c6856c60c963ca4e9e62bf_Client-5.webp" loading="lazy" alt="Client Image" class="client-image">
+                            <div class="client-details">
+                              <div class="client-name">
+                                Kevin Roberts
+                              </div>
+                              <div class="client-position">
+                                COO, Tech Solutions
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="client-single-wrap stroke-linear-3">
+                        <div class="client-content-wrap">
+                          <div class="client-comment">
+                            “The analytics dashboard gives us instant visibility into project health.”
+                          </div>
+                          <div class="cilent-author-wrap">
+                            <img src="685136558672924f1602462a/68c6856fa653c2150a44226b_Client-7.webp" loading="lazy" alt="Client Image" class="client-image">
+                            <div class="client-details">
+                              <div class="client-name">
+                                Laura Chen
+                              </div>
+                              <div class="client-position">
+                                Marketing Director
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="client-single-wrap stroke-linear-3">
+                        <div class="client-content-wrap">
+                          <div class="client-comment">
+                            "Feels like our AI tech lead. Except it doesn't ask for stock options. We got rid of three tools and a daily standup. Zero regrets.”
+                          </div>
+                          <div class="cilent-author-wrap">
+                            <img src="685136558672924f1602462a/68c6856cad2f1150decd1fe9_Client-1.webp" loading="lazy" alt="Client Image" class="client-image">
+                            <div class="client-details">
+                              <div class="client-name">
+                                Benedetta Chan
+                              </div>
+                              <div class="client-position">
+                                CEO of Grind.io
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="client-single-slide _01">
+                      <div class="client-single-wrap stroke-linear-3">
+                        <div class="client-content-wrap">
+                          <div class="client-comment">
+                            “The automation features save us hours every week. Our clients are happier, and our team is less stressed.”
+                          </div>
+                          <div class="cilent-author-wrap">
+                            <img src="685136558672924f1602462a/68c6856c77260d7d2e5eafd6_Client-4.webp" loading="lazy" alt="Client Image" class="client-image">
+                            <div class="client-details">
+                              <div class="client-name">
+                                Priya Sharma
+                              </div>
+                              <div class="client-position">
+                                Project Coordinator
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="client-single-wrap stroke-linear-3">
+                        <div class="client-content-wrap">
+                          <div class="client-comment">
+                            “We’ve tried several tools before, but nothing compares to this. The Gantt charts and real-time.”
+                          </div>
+                          <div class="cilent-author-wrap">
+                            <img src="685136558672924f1602462a/68c6856ea8259bc8b2ccc79a_Client-6.webp" loading="lazy" alt="Client Image" class="client-image">
+                            <div class="client-details">
+                              <div class="client-name">
+                                Michael Carter
+                              </div>
+                              <div class="client-position">
+                                CEO, BuildWorks
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="client-single-wrap stroke-linear-3">
+                        <div class="client-content-wrap">
+                          <div class="client-comment">
+                            “Onboarding was seamless, and our team was up and running in less than a day. The support team.”
+                          </div>
+                          <div class="cilent-author-wrap">
+                            <img src="685136558672924f1602462a/68c6856cad2f1150decd1fe9_Client-1.webp" loading="lazy" alt="Client Image" class="client-image">
+                            <div class="client-details">
+                              <div class="client-name">
+                                Benedetta Chan
+                              </div>
+                              <div class="client-position">
+                                CEO of Grind.io
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="client-marquee-wrap">
+                  <div class="client-flex-wrap">
+                    <div class="client-single-slide _02">
+                      <div class="client-single-wrap stroke-linear-3">
+                        <div class="client-content-wrap">
+                          <div class="client-comment">
+                            “This platform completely transformed the way we manage projects. team’s productivity in months.”
+                          </div>
+                          <div class="cilent-author-wrap">
+                            <img src="685136558672924f1602462a/68c6856cad2f1150decd1fe9_Client-1.webp" loading="lazy" alt="Client Image" class="client-image">
+                            <div class="client-details">
+                              <div class="client-name">
+                                Sarah Mitchell
+                              </div>
+                              <div class="client-position">
+                                Product Manager
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="client-single-wrap stroke-linear-3">
+                        <div class="client-content-wrap">
+                          <div class="client-comment">
+                            "The AI flagged a blocked task before I even realized I was blocked. Kinda spooky. I really love this app."
+                          </div>
+                          <div class="cilent-author-wrap">
+                            <img src="685136558672924f1602462a/68c6856ca7fced13a8f30f00_Client-2.webp" loading="lazy" alt="Client Image" class="client-image">
+                            <div class="client-details">
+                              <div class="client-name">
+                                Benedetta Chan
+                              </div>
+                              <div class="client-position">
+                                CEO of Grind.io
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="client-single-wrap stroke-linear-3">
+                        <div class="client-content-wrap">
+                          <div class="client-comment">
+                            "Honestly? This tool manages our projects better than I ever did. I’m not even mad.”
+                          </div>
+                          <div class="cilent-author-wrap">
+                            <img src="685136558672924f1602462a/68c6856f085a37dc80be31ad_Client-3.webp" loading="lazy" alt="Client Image" class="client-image">
+                            <div class="client-details">
+                              <div class="client-name">
+                                Benedetta Chan
+                              </div>
+                              <div class="client-position">
+                                CEO of Grind.io
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="client-single-slide _02">
+                      <div class="client-single-wrap stroke-linear-3">
+                        <div class="client-content-wrap">
+                          <div class="client-comment">
+                            “I love the clean interface and how everything is in one place. No more apps — it’s all here.”
+                          </div>
+                          <div class="cilent-author-wrap">
+                            <img src="685136558672924f1602462a/68c6856c60c963ca4e9e62bf_Client-5.webp" loading="lazy" alt="Client Image" class="client-image">
+                            <div class="client-details">
+                              <div class="client-name">
+                                Kevin Roberts
+                              </div>
+                              <div class="client-position">
+                                COO, Tech Solutions
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="client-single-wrap stroke-linear-3">
+                        <div class="client-content-wrap">
+                          <div class="client-comment">
+                            “The analytics dashboard gives us instant visibility into project health.”
+                          </div>
+                          <div class="cilent-author-wrap">
+                            <img src="685136558672924f1602462a/68c6856fa653c2150a44226b_Client-7.webp" loading="lazy" alt="Client Image" class="client-image">
+                            <div class="client-details">
+                              <div class="client-name">
+                                Laura Chen
+                              </div>
+                              <div class="client-position">
+                                Marketing Director
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="client-single-wrap stroke-linear-3">
+                        <div class="client-content-wrap">
+                          <div class="client-comment">
+                            "Feels like our AI tech lead. Except it doesn't ask for stock options. We got rid of three tools and a daily standup. Zero regrets.”
+                          </div>
+                          <div class="cilent-author-wrap">
+                            <img src="685136558672924f1602462a/68c6856cad2f1150decd1fe9_Client-1.webp" loading="lazy" alt="Client Image" class="client-image">
+                            <div class="client-details">
+                              <div class="client-name">
+                                Benedetta Chan
+                              </div>
+                              <div class="client-position">
+                                CEO of Grind.io
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="client-single-slide _02">
+                      <div class="client-single-wrap stroke-linear-3">
+                        <div class="client-content-wrap">
+                          <div class="client-comment">
+                            “The automation features save us hours every week. Our clients are happier, and our team is less stressed.”
+                          </div>
+                          <div class="cilent-author-wrap">
+                            <img src="685136558672924f1602462a/68c6856c77260d7d2e5eafd6_Client-4.webp" loading="lazy" alt="Client Image" class="client-image">
+                            <div class="client-details">
+                              <div class="client-name">
+                                Priya Sharma
+                              </div>
+                              <div class="client-position">
+                                Project Coordinator
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="client-single-wrap stroke-linear-3">
+                        <div class="client-content-wrap">
+                          <div class="client-comment">
+                            “We’ve tried several tools before, but nothing compares to this. The Gantt charts and real-time.”
+                          </div>
+                          <div class="cilent-author-wrap">
+                            <img src="685136558672924f1602462a/68c6856ea8259bc8b2ccc79a_Client-6.webp" loading="lazy" alt="Client Image" class="client-image">
+                            <div class="client-details">
+                              <div class="client-name">
+                                Michael Carter
+                              </div>
+                              <div class="client-position">
+                                CEO, BuildWorks
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="client-single-wrap stroke-linear-3">
+                        <div class="client-content-wrap">
+                          <div class="client-comment">
+                            “Onboarding was seamless, and our team was up and running in less than a day. The support team.”
+                          </div>
+                          <div class="cilent-author-wrap">
+                            <img src="685136558672924f1602462a/68c6856cad2f1150decd1fe9_Client-1.webp" loading="lazy" alt="Client Image" class="client-image">
+                            <div class="client-details">
+                              <div class="client-name">
+                                Benedetta Chan
+                              </div>
+                              <div class="client-position">
+                                CEO of Grind.io
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="client-marquee-wrap">
+              <div class="client-flex-wrap">
+                <div class="client-single-slide _02">
+                  <div class="client-single-wrap stroke-linear-3">
+                    <div class="client-content-wrap">
+                      <div class="client-comment">
+                        “This platform completely transformed the way we manage projects. team’s productivity in months.”
+                      </div>
+                      <div class="cilent-author-wrap">
+                        <img src="685136558672924f1602462a/68c6856cad2f1150decd1fe9_Client-1.webp" loading="lazy" alt="Client Image" class="client-image">
+                        <div class="client-details">
+                          <div class="client-name">
+                            Sarah Mitchell
+                          </div>
+                          <div class="client-position">
+                            Product Manager
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="client-single-wrap stroke-linear-3">
+                    <div class="client-content-wrap">
+                      <div class="client-comment">
+                        "The AI flagged a blocked task before I even realized I was blocked. Kinda spooky. I really love this app."
+                      </div>
+                      <div class="cilent-author-wrap">
+                        <img src="685136558672924f1602462a/68c6856ca7fced13a8f30f00_Client-2.webp" loading="lazy" alt="Client Image" class="client-image">
+                        <div class="client-details">
+                          <div class="client-name">
+                            Benedetta Chan
+                          </div>
+                          <div class="client-position">
+                            CEO of Grind.io
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="client-single-wrap stroke-linear-3">
+                    <div class="client-content-wrap">
+                      <div class="client-comment">
+                        "Honestly? This tool manages our projects better than I ever did. I’m not even mad.”
+                      </div>
+                      <div class="cilent-author-wrap">
+                        <img src="685136558672924f1602462a/68c6856f085a37dc80be31ad_Client-3.webp" loading="lazy" alt="Client Image" class="client-image">
+                        <div class="client-details">
+                          <div class="client-name">
+                            Benedetta Chan
+                          </div>
+                          <div class="client-position">
+                            CEO of Grind.io
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="client-single-slide _02">
+                  <div class="client-single-wrap stroke-linear-3">
+                    <div class="client-content-wrap">
+                      <div class="client-comment">
+                        “I love the clean interface and how everything is in one place. No more apps — it’s all here.”
+                      </div>
+                      <div class="cilent-author-wrap">
+                        <img src="685136558672924f1602462a/68c6856c60c963ca4e9e62bf_Client-5.webp" loading="lazy" alt="Client Image" class="client-image">
+                        <div class="client-details">
+                          <div class="client-name">
+                            Kevin Roberts
+                          </div>
+                          <div class="client-position">
+                            COO, Tech Solutions
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="client-single-wrap stroke-linear-3">
+                    <div class="client-content-wrap">
+                      <div class="client-comment">
+                        “The analytics dashboard gives us instant visibility into project health.”
+                      </div>
+                      <div class="cilent-author-wrap">
+                        <img src="685136558672924f1602462a/68c6856fa653c2150a44226b_Client-7.webp" loading="lazy" alt="Client Image" class="client-image">
+                        <div class="client-details">
+                          <div class="client-name">
+                            Laura Chen
+                          </div>
+                          <div class="client-position">
+                            Marketing Director
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="client-single-wrap stroke-linear-3">
+                    <div class="client-content-wrap">
+                      <div class="client-comment">
+                        "Feels like our AI tech lead. Except it doesn't ask for stock options. We got rid of three tools and a daily standup. Zero regrets.”
+                      </div>
+                      <div class="cilent-author-wrap">
+                        <img src="685136558672924f1602462a/68c6856cad2f1150decd1fe9_Client-1.webp" loading="lazy" alt="Client Image" class="client-image">
+                        <div class="client-details">
+                          <div class="client-name">
+                            Benedetta Chan
+                          </div>
+                          <div class="client-position">
+                            CEO of Grind.io
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="client-single-slide _02">
+                  <div class="client-single-wrap stroke-linear-3">
+                    <div class="client-content-wrap">
+                      <div class="client-comment">
+                        “The automation features save us hours every week. Our clients are happier, and our team is less stressed.”
+                      </div>
+                      <div class="cilent-author-wrap">
+                        <img src="685136558672924f1602462a/68c6856c77260d7d2e5eafd6_Client-4.webp" loading="lazy" alt="Client Image" class="client-image">
+                        <div class="client-details">
+                          <div class="client-name">
+                            Priya Sharma
+                          </div>
+                          <div class="client-position">
+                            Project Coordinator
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="client-single-wrap stroke-linear-3">
+                    <div class="client-content-wrap">
+                      <div class="client-comment">
+                        “We’ve tried several tools before, but nothing compares to this. The Gantt charts and real-time.”
+                      </div>
+                      <div class="cilent-author-wrap">
+                        <img src="685136558672924f1602462a/68c6856ea8259bc8b2ccc79a_Client-6.webp" loading="lazy" alt="Client Image" class="client-image">
+                        <div class="client-details">
+                          <div class="client-name">
+                            Michael Carter
+                          </div>
+                          <div class="client-position">
+                            CEO, BuildWorks
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="client-single-wrap stroke-linear-3">
+                    <div class="client-content-wrap">
+                      <div class="client-comment">
+                        “Onboarding was seamless, and our team was up and running in less than a day. The support team.”
+                      </div>
+                      <div class="cilent-author-wrap">
+                        <img src="685136558672924f1602462a/68c6856cad2f1150decd1fe9_Client-1.webp" loading="lazy" alt="Client Image" class="client-image">
+                        <div class="client-details">
+                          <div class="client-name">
+                            Benedetta Chan
+                          </div>
+                          <div class="client-position">
+                            CEO of Grind.io
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="client-grid-wrap">
+            <div class="client-single-wrap stroke-linear-3">
+              <div class="client-content-wrap">
+                <div class="client-comment">
+                  “This platform completely transformed the way we manage projects. team’s productivity in months.”
+                </div>
+                <div class="cilent-author-wrap">
+                  <img src="685136558672924f1602462a/68c6856cad2f1150decd1fe9_Client-1.webp" loading="lazy" alt="Client Image" class="client-image">
+                  <div class="client-details">
+                    <div class="client-name">
+                      Sarah Mitchell
+                    </div>
+                    <div class="client-position">
+                      Product Manager
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="client-single-wrap stroke-linear-3">
+              <div class="client-content-wrap">
+                <div class="client-comment">
+                  "The AI flagged a blocked task before I even realized I was blocked. Kinda spooky. I really love this app."
+                </div>
+                <div class="cilent-author-wrap">
+                  <img src="685136558672924f1602462a/68c6856ca7fced13a8f30f00_Client-2.webp" loading="lazy" alt="Client Image" class="client-image">
+                  <div class="client-details">
+                    <div class="client-name">
+                      Benedetta Chan
+                    </div>
+                    <div class="client-position">
+                      CEO of Grind.io
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="client-single-wrap stroke-linear-3">
+              <div class="client-content-wrap">
+                <div class="client-comment">
+                  "Honestly? This tool manages our projects better than I ever did. I’m not even mad.”
+                </div>
+                <div class="cilent-author-wrap">
+                  <img src="685136558672924f1602462a/68c6856f085a37dc80be31ad_Client-3.webp" loading="lazy" alt="Client Image" class="client-image">
+                  <div class="client-details">
+                    <div class="client-name">
+                      Benedetta Chan
+                    </div>
+                    <div class="client-position">
+                      CEO of Grind.io
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="client-single-wrap stroke-linear-3">
+              <div class="client-content-wrap">
+                <div class="client-comment">
+                  “The automation features save us hours every week. Our clients are happier, and our team is less stressed.”
+                </div>
+                <div class="cilent-author-wrap">
+                  <img src="685136558672924f1602462a/68c6856c77260d7d2e5eafd6_Client-4.webp" loading="lazy" alt="Client Image" class="client-image">
+                  <div class="client-details">
+                    <div class="client-name">
+                      Priya Sharma
+                    </div>
+                    <div class="client-position">
+                      Project Coordinator
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="client-single-wrap stroke-linear-3">
+              <div class="client-content-wrap">
+                <div class="client-comment">
+                  “We’ve tried several tools before, but nothing compares to this. The Gantt charts and real-time.”
+                </div>
+                <div class="cilent-author-wrap">
+                  <img src="685136558672924f1602462a/68c6856ea8259bc8b2ccc79a_Client-6.webp" loading="lazy" alt="Client Image" class="client-image">
+                  <div class="client-details">
+                    <div class="client-name">
+                      Michael Carter
+                    </div>
+                    <div class="client-position">
+                      CEO, BuildWorks
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="client-single-wrap stroke-linear-3">
+              <div class="client-content-wrap">
+                <div class="client-comment">
+                  “I love the clean interface and how everything is in one place. No more apps — it’s all here.”
+                </div>
+                <div class="cilent-author-wrap">
+                  <img src="685136558672924f1602462a/68c6856c60c963ca4e9e62bf_Client-5.webp" loading="lazy" alt="Client Image" class="client-image">
+                  <div class="client-details">
+                    <div class="client-name">
+                      Kevin Roberts
+                    </div>
+                    <div class="client-position">
+                      COO, Tech Solutions
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="client-overlay"></div>
+    </section>  -->
+
+            
+
+    <section class="testimonial-wrap">
         <h2 class="testimonial-title">What Our Customers Have To Say......</h2>
 
         <div class="testimonial-slider">
@@ -1524,7 +2249,6 @@ body.has-fixed-nav {
 
         </div>
       </section>
-
 
       <!-- End Social Proof -->
 
@@ -2915,20 +3639,24 @@ body.has-fixed-nav {
         <div class="footer-col footer-brand">
           <img src="iwashhublogo.png" alt="iWash Hub" class="footer-logo">
           <p>
+<<<<<<< HEAD
             iWash Hub redefines garment care with premium laundry and dry-cleaning services under one roof
+=======
+            iWash Hub redefines garment care with premium laundry and dry-cleaning services under one roof.
+>>>>>>> c13f3e0 (first commit)
           </p>
 
           <div class="social-icons">
-            <a href="#" aria-label="Facebook">
+            <a href="https://www.facebook.com/iwashhubindia" aria-label="Facebook">
               <i class="fa-brands fa-facebook-f"></i>
             </a>
-            <a href="#" aria-label="Twitter">
+            <a href="https://x.com/iwashhub36576" aria-label="Twitter">
               <i class="fa-brands fa-x-twitter"></i>
             </a>
-            <a href="#" aria-label="Instagram">
+            <a href="https://www.instagram.com/building_iwashhub" aria-label="Instagram">
               <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="#" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/company/iwashhub" aria-label="LinkedIn">
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
             <a href="#" aria-label="YouTube">
@@ -2941,7 +3669,7 @@ body.has-fixed-nav {
           <h4>Help & Support</h4>
           <p>
             <i class="icon clock"></i>
-            Monday-Sunday 9:00 AM 10:00 PM
+            Monday-Sunday 10:00 AM 07:00 PM
           </p>
 
           <p>
@@ -2965,17 +3693,17 @@ body.has-fixed-nav {
         <div class="footer-col">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Prepaid Plans</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="../">About Us</a></li>
+            <li><a href="../">Pricing</a></li>
+            <li><a href="../">Prepaid Plans</a></li>
+            <li><a href="../">FAQ</a></li>
+            <li><a href="../">Terms and Conditions</a></li>
             <li><a href="index1.html">Career</a></li>
-            <li><a href="#">Get Franchise</a></li>
-            <li><a href="#">Consultancy</a></li>
-            <li><a href="#">Our Stores</a></li>
+            <li><a href="../">Get Franchise</a></li>
+            <li><a href="../">Consultancy</a></li>
+            <li><a href="../">Our Stores</a></li>
             <li><a href="iwashhubblog.htm">Our Blog</a></li>
-            <li><a href="#">Sitemap</a></li>
+            <li><a href="../">Sitemap</a></li>
           </ul>
         </div>
 
@@ -2983,15 +3711,15 @@ body.has-fixed-nav {
         <div class="footer-col">
           <h4>Services</h4>
           <ul>
-            <li><a href="iWash Hubservice.htm">Laundry Service</a></li>
-            <li><a href="#">Organic Dry Clean Service</a></li>
-            <li><a href="#">Dry Clean Service</a></li>
-            <li><a href="#">Shoe Cleaning Service</a></li>
-            <li><a href="#">Jacket Cleaning Service</a></li>
-            <li><a href="#">Bag Cleaning Service</a></li>
-            <li><a href="#">Sofa Cleaning Service</a></li>
-            <li><a href="#">Carpet Cleaning Service</a></li>
-            <li><a href="#">Steam Ironing Service</a></li>
+            <li><a href="../">Wash and Fold </a></li>
+            <li><a href="../"> Dry Clean </a></li>
+            <li><a href="../">Steam Ironing </a></li>
+            <li><a href="../">Shoe Cleaning </a></li>
+            <li><a href="../">Jacket Cleaning </a></li>
+            <li><a href="../">Bag Cleaning </a></li>
+            <li><a href="../">Sofa Cleaning </a></li>
+            <li><a href="../">Carpet Cleaning </a></li>
+            
           </ul>
         </div>
 
@@ -3163,64 +3891,32 @@ body.has-fixed-nav {
   </style>
 
 
+
+
+
+
+
 <script>
-window.addEventListener("load", function () {
-
-  // Popup sirf ek baar dikhe
-  if (!localStorage.getItem("iwashhub_popup_shown")) {
-
-    // Popup open
-    setTimeout(() => {
-      document.getElementById("laundryPopup").style.display = "flex";
-    }, 800);
-
-    // 10 sec baad close icon dikhe
-    setTimeout(() => {
-      document.getElementById("popupClose").style.display = "block";
-    }, 10000);
-  }
-});
-
-// Close popup
-function closePopup() {
-  document.getElementById("laundryPopup").style.display = "none";
-  localStorage.setItem("iwashhub_popup_shown", "true");
-}
-
-// Name = only letters
-document.querySelector('input[name="name"]').addEventListener("input", function () {
-  this.value = this.value.replace(/[^A-Za-z ]/g, '');
-});
-
-// Mobile = only numbers & max 10 digits
-document.querySelector('input[name="mobile"]').addEventListener("input", function () {
-  this.value = this.value.replace(/\D/g, '').slice(0,10);
-});
-
-// Submit form
-document.getElementById("popupForm").addEventListener("submit", function(e) {
+document.getElementById("popupForm").addEventListener("submit", function(e){
   e.preventDefault();
 
-  // Mark popup as shown
-  localStorage.setItem("iwashhub_popup_shown", "true");
-
-  // Close popup
-  document.getElementById("laundryPopup").style.display = "none";
-
-  // Scroll to offer section
-  document.getElementById("offer-card__wrapper").scrollIntoView({
-    behavior: "smooth"
+  fetch("popup-submit.php", {
+    method: "POST",
+    body: new FormData(this)
+  })
+  .then(res => res.text())
+  .then(data => {
+    if(data.trim() === "success"){
+      alert("Thank you! Our team will contact you soon 🧺");
+      document.getElementById("popupForm").reset();
+      closePopup();
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
   });
-
-  // 🔥 10 second baad page top par scroll
-  setTimeout(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  }, 10000);
 });
 </script>
+
 
 
 
@@ -3265,6 +3961,65 @@ document.getElementById("popupForm").addEventListener("submit", function(e) {
   <script src="core/misc/position.js?v=10.1.6"></script><noscript><iframe
       src="https://www.googletagmanager.com/ns.html?id=GTM-KRBMWNL" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
+
+ 
+  <style>
+    /* Smooth transition for all text */
+#navbar .nav__link,
+#navbar .dynamic-schedule-cta__heading,
+#navbar .dynamic-schedule-cta__text {
+  transition: color 0.3s ease;
+}
+
+/* Default state (top) – baaki links white */
+#navbar .navbar--pages .nav__link,
+#navbar .navbar--actions .nav__link {
+  color: #fff;
+}
+
+/* Pickup default (top) */
+#navbar .dynamic-schedule-cta__heading,
+#navbar .dynamic-schedule-cta__text {
+  color: #fff;
+}
+
+/* Pickup @ 400px */
+#navbar.pickup--black .dynamic-schedule-cta__heading,
+#navbar.pickup--black .dynamic-schedule-cta__text {
+  color: #000 !important;
+}
+
+/* Baaki links @ 600px */
+#navbar.navbar--scrolled .navbar--pages .nav__link,
+#navbar.navbar--scrolled .navbar--actions .nav__link {
+  color: #000 !important;
+}
+
+  </style>
+
+<script>
+  document.addEventListener("scroll", function () {
+    const navbar = document.getElementById("navbar");
+    const scrollY = window.scrollY;
+
+    // Pickup at 400px
+    if (scrollY >= 400) {
+      navbar.classList.add("pickup--black");
+    } else {
+      navbar.classList.remove("pickup--black");
+    }
+
+    // Other links at 600px
+    if (scrollY >= 700) {
+      navbar.classList.add("navbar--scrolled");
+    } else {
+      navbar.classList.remove("navbar--scrolled");
+    }
+  });
+</script>
+
+
+
 
 </body>
 
