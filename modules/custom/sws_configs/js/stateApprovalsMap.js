@@ -76,6 +76,9 @@
 
       // startAutoAnim(); 
 
+  
+      
+
   const stateContentMap = {
   "Andhra Pradesh":
     "iWash Hub\nMG Road, Vijayawada, Andhra Pradesh\n📞 8948310077\n⭐ 4.6/5\n\n" +
@@ -528,7 +531,7 @@ jQuery(document).ready(function () {
 
     const selectedVal = jQuery(this).val();
 
-    if (selectedVal !== '') {
+    if (selectedVal !== '')  { 
       jQuery('.state-name').text(selectedText);
       jQuery('.state-info-card').stop(true, true).fadeIn(200);
     } else {
