@@ -570,16 +570,16 @@ body.has-fixed-nav {
 
         <figure class="video-figure">
           <video id="home-hero-video" class="background-video" data-hero-video data-video="home-hero-video"
-            poster="videohome_page.mp4" muted playsinline loop
+            poster="videohomefinal.mp4" muted playsinline loop
             aria-label="Video showing Rinse picking up, cleaning, and delivering clean clothes to a customer.">
-
-            <source src="videohome_page.mp4" type="video/mp4"
+          
+            <source src="videohomefinal.mp4" type="video/mp4"
               media="(max-width: 639px)">
-            <source src="videohome_page.mp4" type="video/mp4" media="(min-width: 639px)">
+            <source src="videohomefinal.mp4" type="video/mp4" media="(min-width: 639px)">
 
-            <source src="videohome_page.mp4" type="video/mp4"
+            <source src="videohomefinal.mp4" type="video/mp4"
               media="(max-width: 639px)">
-            <source src="videohome_page.mp4" type="video/mp4" media="(min-width: 639px)">
+            <source src="videohomefinal.mp4" type="video/mp4" media="(min-width: 639px)">
           </video>
           <figcaption class="sr-only">
             Video description:
@@ -607,7 +607,7 @@ body.has-fixed-nav {
               From pickup to fresh delivery — iWash Hub takes care of it all.
             </div>
           </div>
-
+          
           <div class="splash-transform-transition">
 
             <a href="https://pickup-scheduler.quickdrycleaning.com/en/iwashhub/pickup"
@@ -2088,7 +2088,7 @@ body.has-fixed-nav {
 
             
 
-    <section class="testimonial-wrap" >
+    <!-- <section class="testimonial-wrap" >
         <h2 class="testimonial-title">What Our Customers Have To Say......</h2>
 
         <div class="testimonial-slider">
@@ -2249,12 +2249,170 @@ body.has-fixed-nav {
           <button class="nav-btn right" id="nextBtn">❯</button>
 
         </div>
-      </section>
+      </section> -->
+      
+      <!-- This is testomonilal page  --> 
+      <section class="video-section">
+        
+        <div class="topbartext">
+          <h1 >Testimonials</h1>
+        </div>
+  <!-- LEFT BUTTON -->
+  <button class="nav-btn left-btn">&#10094;</button>
+
+  <!-- RIGHT BUTTON -->
+  <button class="nav-btn right-btn">&#10095;</button>
+
+  <div class="video-slider owl-carousel">
+
+    <div class="video-item">
+      <iframe class="yt-video" data-id="uAm1tP7VZZA"
+        src="https://www.youtube.com/embed/uAm1tP7VZZA?mute=1"
+        allow="autoplay"></iframe>
+    </div>
+
+    <div class="video-item">
+      <iframe class="yt-video" data-id="xR5ssZ1rXnQ"
+        src="https://www.youtube.com/embed/xR5ssZ1rXnQ?mute=1"
+        allow="autoplay"></iframe>
+    </div>
+
+    <div class="video-item">
+      <iframe class="yt-video" data-id="lc_zNo19kF0"
+        src="https://www.youtube.com/embed/lc_zNo19kF0?mute=1"
+        allow="autoplay"></iframe>
+    </div>
+
+  </div>
+</section>
+
+<style>  
+
+.topbartext{ 
+  justify-content: center;
+  text-align: center;
+}
+  .video-section {
+  padding: 50px;
+  
+}
+
+.video-item {
+  transform: scale(0.8);
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
+  border: none;
+}
+
+/* Center video highlight */
+.owl-item.center .video-item {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.video-section {
+  position: relative;
+  padding: 50px;
+}
+
+/* Buttons */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  background: #ff4d4d;
+}
+
+/* Position */
+.left-btn {
+  left: 10px;
+}
+
+.right-btn {
+  right: 10px;
+}
+</style>
 
       <!-- End Social Proof -->
 
 
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+<!-- Owl Carousel -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+  var owl = $('.video-slider');
+
+owl.owlCarousel({
+    center: true,
+    items: 3,
+    loop: true,
+    margin: 20,
+    nav: false,
+    dots: false,
+    responsive:{
+        0:{ items:1 },
+        600:{ items:2 },
+        1000:{ items:3 }
+    }
+});
+
+// Button controls
+$('.left-btn').click(function(){
+  owl.trigger('prev.owl.carousel');
+});
+
+$('.right-btn').click(function(){
+  owl.trigger('next.owl.carousel');
+});
+
+// Function to autoplay only center video
+function playCenterVideo() {
+
+  $('.yt-video').each(function () {
+    let videoId = $(this).data('id');
+
+    // sabka autoplay band
+    $(this).attr('src', `https://www.youtube.com/embed/${videoId}?mute=1`);
+  });
+
+  // center wali video
+  let center = $('.owl-item.center .yt-video');
+  let videoId = center.data('id');
+
+  center.attr('src', `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1`);
+}
+
+// On load
+playCenterVideo();
+
+// On slide change
+owl.on('changed.owl.carousel', function () {
+  playCenterVideo();
+});
+</script>
 
       <section id="section--why-rinse" class="section  section--why-rinse-gallery section--why-rinse-gallery--home"
         data-background-color="white">
