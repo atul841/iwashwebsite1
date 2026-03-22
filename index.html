@@ -286,10 +286,81 @@
   class="body--with-announcement-banner body--relative background--white preload preload-sticky page--home">
     
 
-      <!-- popupfrom page add here that  -->
-       <!-- Popup Overlay -->
-  
+  <div id="video-intro">
+  <video id="intro-video" autoplay muted playsinline>
+    <source src="videohomefinal.mp4" type="video/mp4">
+  </video>
+</div> 
 
+<style>
+  /* intro video full screen */
+#video-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: black;
+}
+
+#video-intro video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* website hidden initially */
+/* #main-content {
+  opacity: 0;
+  transform: translate3d(0, 40px, 0);
+  transition: 
+    opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+} */
+
+/* #main-content.show {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+} */
+
+/* show website */
+#main-content.show {
+  opacity: 1;
+}
+</style> 
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const intro = document.getElementById("video-intro");
+  const main = document.getElementById("main-content");
+
+  // check karo pehle hi play ho chuka hai ya nahi
+  if (sessionStorage.getItem("introPlayed")) {
+    // agar already play ho gaya → video hata do
+    if (intro) intro.remove();
+    main.classList.add("show");
+    return;
+  }
+
+  // mark as played
+  sessionStorage.setItem("introPlayed", "true");
+
+  // normal intro run hoga
+  setTimeout(() => {
+
+    intro.style.transition = "opacity 1s ease";
+    intro.style.opacity = "0";
+
+    main.classList.add("show");
+
+    setTimeout(() => {
+      intro.remove();
+    }, 1000);
+
+  }, 2000);
+});
+</script>
+
+    
 
   
 
@@ -304,11 +375,7 @@
         <div class="navbar--pages navbar--full uk-navbar-left ">
           <ul class="nav uk-navbar-nav">
 
-            <!-- <li class="nav-item nav-item--logo nav-item--home">
-          <a id="nav__a--home" class="nav__link" href="index.htm" aria-label="Home">
-            <figure class="figure--logo logo--nav-left" role="none" aria-hidden="true"></figure>
-          </a>
-        </li> --> 
+           
         
             <li class="nav-item nav-item--logo nav-item--home">
               <a id="nav__a--home" class="nav__link nav-text-logo" href="../" aria-label="Home">
@@ -325,7 +392,7 @@
             </li>
 
             <li class="nav -item nav-item--rinse-repeat">
-              <a id="nav__a--rinse-repeat" class="nav__link " href="#" >Wash Repeat</a>
+              <a id="nav__a--rinse-repeat" class="nav__link " href="repeat/index.htm" >Wash Repeat</a>
             </li>
 
             <li class="nav-item nav-item--partner">
@@ -403,9 +470,7 @@
 
         <div class="navbar--narrow uk-navbar-center">
 
-          <!-- <a id="nav__a--home--logo" class="uk-navbar-item uk-logo nav__link " href="index.htm" aria-label="Home">
-        <figure class="figure--logo logo--nav-center"></figure>
-      </a> -->
+          
           <a id="nav__a--home--logo" class="uk-navbar-item uk-logo nav__link" href="../" aria-label="Home">
             <img src="iwashhublogo.png" alt="iWash Hub" style="height:62px;">
           </a>
@@ -559,28 +624,24 @@ body.has-fixed-nav {
 
 
 
-
-
-    
-
     <main id="main-content" tabindex="-1" class=" main--sticky-footer ">
 
       <section id="home__hero" class="section section--hero hero video-hero background--dark"
         data-background-color="image-dark" data-section-id="home-hero" data-bold-video-hero data-lead-capture-page-hero>
 
         <figure class="video-figure">
-          <video id="home-hero-video" class="background-video" data-hero-video data-video="home-hero-video"
-            poster="videohomefinal.mp4" muted playsinline loop
-            aria-label="Video showing Rinse picking up, cleaning, and delivering clean clothes to a customer.">
-          
-            <source src="videohomefinal.mp4" type="video/mp4"
-              media="(max-width: 639px)">
-            <source src="videohomefinal.mp4" type="video/mp4" media="(min-width: 639px)">
+          <video id="home-hero-video"
+  class="background-video"
+  data-hero-video
+  data-video="home-hero-video"
+  autoplay
+  muted
+  playsinline
+  loop
+  aria-label="Video">
 
-            <source src="videohomefinal.mp4" type="video/mp4"
-              media="(max-width: 639px)">
-            <source src="videohomefinal.mp4" type="video/mp4" media="(min-width: 639px)">
-          </video>
+  <source src="videohomefinal.mp4" type="video/mp4">
+</video>
           <figcaption class="sr-only">
             Video description:
             A Rinse Wash & Fold bag is sitting on a table, surrounded by
@@ -714,8 +775,7 @@ body.has-fixed-nav {
             </ul>
 
 
-            <!-- The second set of images allows us to make the infinite scroll animation. -->
-            <!-- We only use the animation below uk-med, so we'll hide this above that breakpoint. -->
+           
             <ul class="logo-carousel__itemset hide@m" aria-hidden="true">
               <li class="logo-carousel__item">
                 <img src="logohomepage/Bbc_20260122_173030_0000.svg" height="16" width="52">
@@ -750,12 +810,8 @@ body.has-fixed-nav {
 
       </section> <!-- End Hero -->
 
-      <!-- Notes for use:
-  * Stylesheet for the page must use /landing/_services-section.scss
-  * View must extend ServicesSectionMixin
-  * JS must import and call setUpFadingServiceCTAs on page-ready
-  * JS must render RinseRepeatFeaturesModal (if not homepage)
--->
+   
+      
 
       <section class="section section--landing-bold section--landing-bold--services" data-background-color="white">
 
@@ -1000,7 +1056,7 @@ body.has-fixed-nav {
                       Standard delivery in <span class="nowrap">24 hours</span>,<br aria-hidden="true">
                       plus <span class="nowrap"><strong>4 hours</strong></span> <strong>express option.</strong>
                     </p>
-
+                  
 
                   </div>
                 </div>
@@ -1041,7 +1097,8 @@ body.has-fixed-nav {
                 </a>
 
               </div>
-            </div><!-- End primary service content wrapper -->
+            </div> 
+            
 
             <div data-service-type-section="dc" class="landing-bold-service-content-wrapper"><!-- DC content wrapper -->
 
@@ -1245,168 +1302,6 @@ body.has-fixed-nav {
 
       
 
-    <!-- <section class="testimonial-wrap" >
-        <h2 class="testimonial-title">What Our Customers Have To Say......</h2>
-
-        <div class="testimonial-slider">
-
-          <button class="nav-btn left" id="prevBtn">❮</button>
-
-          <div class="slider-track" id="sliderTrack">
-
-            <div class="testimonial-card">
-              <p>
-                "I have been using iWashHub for the past three months, and I am extremely satisfied with their service.
-                Being a working professional, I hardly get time for laundry, and iWashHub has made my life very easy.
-                Clothes are always returned neatly folded, well-ironed, and smelling fresh. Their pickup and delivery
-                are on time, and the staff is polite and professional. Pricing is reasonable compared to local
-                laundries, and the quality is far better. Highly recommended for busy families and professionals."
-              </p>
-              <div class="user">
-                <span class="avatar"></span>
-                <span>Adarsh Singh</span>
-              </div>
-            </div>
-
-            <div class="testimonial-card active">
-              <p>
-                I live in an apartment where space for washing and drying clothes is limited. iWashHub has been a
-                blessing for my family. Their service is very systematic, and they always deliver within the promised
-                time. Clothes are washed properly, stains are removed, and ironing quality is excellent. The
-                subscription plans are also very economical. It feels like a premium service at an affordable Indian
-                price. I would definitely recommend iWashHub to others.
-              </p>
-              <div class="user">
-                <span class="avatar dark"></span>
-                <span>Vikas Chaudhary</span>
-              </div>
-            </div>
-
-            <div class="testimonial-card">
-              <p>
-                As a bachelor living away from home, managing laundry was always a problem for me. iWashHub solved this
-                issue completely. Their pickup boy comes on time, and delivery is also hassle-free. Clothes are cleaned
-                thoroughly and packed properly. I also like that they send updates on WhatsApp, which is very
-                convenient. Compared to local dhobis, the quality and professionalism of iWashHub is much better.
-              </p>
-              <div class="user">
-                <span class="avatar"></span>
-                <span>Alok Pratap Singh</span>
-              </div>
-            </div>
-
-            <div class="testimonial-card">
-              <p>
-                I run a small boutique and regularly send clothes for washing and ironing to iWashHub. Their handling of
-                designer wear and delicate fabrics is very impressive. They use good quality detergents and proper
-                processes, which helps maintain fabric life. Turnaround time is quick, and they never compromise on
-                quality. In today’s fast-paced Indian market, reliable services like iWashHub are truly valuable.
-              </p>
-              <div class="user">
-                <span class="avatar"></span>
-                <span>Rohan Pandey</span>
-              </div>
-            </div>
-
-            <div class="testimonial-card">
-              <p>
-                iWashHub is our go-to laundry service for the entire family. From school uniforms to office clothes and
-                heavy blankets, everything is handled efficiently. The staff is courteous and always ready to listen to
-                special instructions. Their hygiene standards are excellent, which gives us peace of mind. The pricing
-                is transparent with no hidden charges. Overall, it is a trustworthy laundry brand that understands
-                Indian customer needs.
-              </p>
-              <div class="user">
-                <span class="avatar"></span>
-                <span>Rahul Pandey</span>
-              </div>
-            </div>
-
-            <div class="testimonial-card">
-              <p>
-                I started using iWashHub after a friend’s recommendation, and I must say it was a great decision. Their
-                washing quality is consistent, and clothes come back looking fresh and well-maintained. Even tough
-                stains are taken care of properly. The convenience of doorstep pickup and delivery saves a lot of time.
-                For people living in cities with busy schedules, iWashHub is a perfect laundry partner.
-              </p>
-              <div class="user">
-                <span class="avatar"></span>
-                <span>ram Singh</span>
-              </div>
-            </div>
-
-            <div class="testimonial-card">
-              <p>
-                What I like most about iWashHub is their professionalism and attention to detail. Each garment is
-                cleaned separately and returned in perfect condition. I have given expensive formal shirts and
-                traditional Indian wear, and I was very satisfied with the results. Their service feels premium, yet the
-                charges are affordable for middle-class Indian families. Customer support is quick to respond, which
-                builds trust.
-              </p>
-              <div class="user">
-                <span class="avatar"></span>
-                <span>Pratap Yadav</span>
-              </div>
-            </div>
-
-            <div class="testimonial-card">
-              <p>
-                iWashHub provides a very smooth and reliable laundry experience. From booking to delivery, everything is
-                well-organized. The staff follows proper hygiene protocols, which is important for us, especially after
-                COVID. Clothes are delivered neatly packed and on time. Their ironing quality is far superior to nearby
-                laundries. I am happy to recommend iWashHub to my relatives and friends.
-              </p>
-              <div class="user">
-                <span class="avatar"></span>
-                <span>Yesh Singh</span>
-              </div>
-            </div>
-
-            <div class="testimonial-card">
-              <p>
-                I have tried many laundry services before, but iWashHub stands out in terms of quality and service. They
-                understand Indian clothing needs, whether it is cotton wear, festive clothes, or daily-use garments.
-                Their team is punctual, and the service is very dependable. With reasonable pricing and excellent
-                results, iWashHub has become an essential part of my household routine.
-              </p>
-              <div class="user">
-                <span class="avatar"></span>
-                <span>Rohit</span>
-              </div>
-            </div>
-
-            <div class="testimonial-card">
-              <p>
-                As a working couple, we hardly get time to manage daily chores. iWashHub has made laundry completely
-                stress-free for us. Their doorstep service is very convenient, and they always follow the committed
-                timeline. Clothes come back neatly folded and properly packed. Even white clothes remain bright after
-                washing. This is a modern solution for Indian families who want quality and convenience together.
-              </p>
-              <div class="user">
-                <span class="avatar"></span>
-                <span>Yashmeen</span>
-              </div>
-            </div>
-
-            <div class="testimonial-card">
-              <p>
-                I am very particular about my office clothes, and iWashHub has exceeded my expectations. Shirts,
-                trousers, and blazers are handled with great care. The ironing finish is crisp, just like professional
-                dry-cleaning. They also take special instructions seriously, which many local laundries ignore. Overall,
-                iWashHub offers premium laundry service at reasonable prices, suitable for Indian professionals.
-              </p>
-              <div class="user">
-                <span class="avatar"></span>
-                <span>Alok Pratap Singh</span>
-              </div>
-            </div>
-
-          </div>
-
-          <button class="nav-btn right" id="nextBtn">❯</button>
-
-        </div>
-      </section> -->
       
       <!-- This is testomonilal page  --> 
       <section class="video-section">
@@ -3043,7 +2938,7 @@ owl.on('changed.owl.carousel', function () {
         <div class="footer-col footer-qr">
           <h4>Scan the QR Code</h4>
           <p>To Download Mobile App</p>
-          <img src="qr-code.png" alt="QR Code">
+          <img src="qr.jpeg" alt="QR Code">
         </div>
 
       </div>
@@ -3061,13 +2956,7 @@ owl.on('changed.owl.carousel', function () {
 
 
 
-  <!-- WhatsApp Icon (same) -->
-  <!-- <a href="https://wa.me/918948310077" 
-     class="whatsapp-float" 
-     target="_blank" 
-     aria-label="WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a> -->
+ 
 
 </div>
 
